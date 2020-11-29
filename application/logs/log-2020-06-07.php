@@ -1,0 +1,36 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2020-06-07 00:27:27 --> 404 Page Not Found: Faviconpng/index
+ERROR - 2020-06-07 02:58:48 --> 404 Page Not Found: Dns-query/index
+ERROR - 2020-06-07 03:25:10 --> 404 Page Not Found: TP/public
+ERROR - 2020-06-07 03:53:35 --> 404 Page Not Found: Solr/admin
+ERROR - 2020-06-07 06:32:10 --> 404 Page Not Found: 5188210101/echo.php
+ERROR - 2020-06-07 07:04:03 --> 404 Page Not Found: Dns-query/index
+ERROR - 2020-06-07 07:54:07 --> 404 Page Not Found: Api/jsonws
+ERROR - 2020-06-07 08:04:45 --> 404 Page Not Found: Ab2g/index
+ERROR - 2020-06-07 08:34:30 --> 404 Page Not Found: PhpMyAdmin/scripts
+ERROR - 2020-06-07 08:34:30 --> 404 Page Not Found: Phpmyadmin/scripts
+ERROR - 2020-06-07 08:34:31 --> 404 Page Not Found: Pma/scripts
+ERROR - 2020-06-07 08:34:31 --> 404 Page Not Found: Myadmin/scripts
+ERROR - 2020-06-07 08:34:31 --> 404 Page Not Found: MyAdmin/scripts
+ERROR - 2020-06-07 09:42:06 --> 404 Page Not Found: PhpMyAdmin/scripts
+ERROR - 2020-06-07 09:42:07 --> 404 Page Not Found: Phpmyadmin/scripts
+ERROR - 2020-06-07 09:42:07 --> 404 Page Not Found: Pma/scripts
+ERROR - 2020-06-07 09:42:08 --> 404 Page Not Found: Myadmin/scripts
+ERROR - 2020-06-07 09:42:08 --> 404 Page Not Found: MyAdmin/scripts
+ERROR - 2020-06-07 14:00:08 --> 404 Page Not Found: Wp-loginphp/index
+ERROR - 2020-06-07 14:00:11 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2020-06-07 14:12:59 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2020-06-07 18:45:08 --> 404 Page Not Found: Wp-loginphp/index
+ERROR - 2020-06-07 18:45:08 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2020-06-07 19:27:42 --> 404 Page Not Found: Api/jsonws
+ERROR - 2020-06-07 19:35:25 --> 404 Page Not Found: Portal/redlion
+ERROR - 2020-06-07 20:39:14 --> 404 Page Not Found: Vendor/phpunit
+ERROR - 2020-06-07 20:39:15 --> 404 Page Not Found: Vendor/phpunit
+ERROR - 2020-06-07 21:44:14 --> 404 Page Not Found: TP/public
+ERROR - 2020-06-07 21:44:15 --> 404 Page Not Found: TP/index.php
+ERROR - 2020-06-07 21:44:17 --> 404 Page Not Found: Thinkphp/html
+ERROR - 2020-06-07 21:44:19 --> 404 Page Not Found: Html/public
+ERROR - 2020-06-07 21:44:21 --> 404 Page Not Found: Public/index.php
+ERROR - 2020-06-07 21:44:21 --> 404 Page Not Found: TP/html
+ERROR - 2020-06-07 21:44:24 --> 404 Page Not Found: Elrektphp/index

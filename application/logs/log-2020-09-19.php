@@ -1,0 +1,32 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2020-09-19 01:18:52 --> 404 Page Not Found: Wp-loginphp/index
+ERROR - 2020-09-19 01:18:53 --> 404 Page Not Found: Blog/wp-login.php
+ERROR - 2020-09-19 01:18:54 --> 404 Page Not Found: Blogs/wp-login.php
+ERROR - 2020-09-19 01:18:54 --> 404 Page Not Found: Home/wp-login.php
+ERROR - 2020-09-19 01:18:54 --> 404 Page Not Found: Wordpress/wp-login.php
+ERROR - 2020-09-19 01:18:55 --> 404 Page Not Found: Press/wp-login.php
+ERROR - 2020-09-19 01:18:55 --> 404 Page Not Found: Wp/wp-login.php
+ERROR - 2020-09-19 01:18:56 --> 404 Page Not Found: Wpmu/wp-login.php
+ERROR - 2020-09-19 01:18:57 --> 404 Page Not Found: Web/wp-login.php
+ERROR - 2020-09-19 01:18:57 --> 404 Page Not Found: New/wp-login.php
+ERROR - 2020-09-19 01:18:57 --> 404 Page Not Found: News/wp-login.php
+ERROR - 2020-09-19 01:18:58 --> 404 Page Not Found: Site/wp-login.php
+ERROR - 2020-09-19 01:18:59 --> 404 Page Not Found: Sites/wp-login.php
+ERROR - 2020-09-19 01:18:59 --> 404 Page Not Found: Sitio/wp-login.php
+ERROR - 2020-09-19 01:19:00 --> 404 Page Not Found: En/wp-login.php
+ERROR - 2020-09-19 01:19:00 --> 404 Page Not Found: Old/wp-login.php
+ERROR - 2020-09-19 01:19:01 --> 404 Page Not Found: Info/wp-login.php
+ERROR - 2020-09-19 01:19:02 --> 404 Page Not Found: Demo/wp-login.php
+ERROR - 2020-09-19 01:19:02 --> 404 Page Not Found: Portal/wp-login.php
+ERROR - 2020-09-19 01:19:03 --> 404 Page Not Found: English/wp-login.php
+ERROR - 2020-09-19 10:59:06 --> 404 Page Not Found: Wp-loginphp/index
+ERROR - 2020-09-19 10:59:06 --> 404 Page Not Found: Wp-loginphp/index
+ERROR - 2020-09-19 20:17:37 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-09-19 20:17:37 --> 404 Page Not Found: Faviconpng/index
+ERROR - 2020-09-19 20:17:43 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-09-19 20:18:05 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-09-19 20:30:12 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2020-09-19 20:30:13 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-09-19 20:30:17 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-09-19 20:30:48 --> 404 Page Not Found: Bowernd/img

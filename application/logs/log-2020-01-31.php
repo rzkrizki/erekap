@@ -1,0 +1,42 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2020-01-31 18:34:34 --> 404 Page Not Found: Faviconpng/index
+ERROR - 2020-01-31 18:35:53 --> 404 Page Not Found: Bowernd/assets2
+ERROR - 2020-01-31 20:53:21 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 20:53:21 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 20:54:46 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 20:54:46 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:01:10 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:01:10 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:02:51 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:02:51 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:03:52 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:03:52 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:04:32 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:04:32 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:04:58 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:04:58 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:06:11 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:06:11 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:07:04 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:07:04 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:07:52 --> 404 Page Not Found: Summernotejsmap/index
+ERROR - 2020-01-31 21:16:30 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 21:16:30 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 21:16:31 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-01-31 22:18:54 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 22:18:54 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 22:19:35 --> 404 Page Not Found: Summernotejsmap/index
+ERROR - 2020-01-31 22:20:09 --> Severity: Compile Error --> Redefinition of parameter $vtipe /opt/lampp/htdocs/digipol/application/controllers/Legislatif.php 1041
+ERROR - 2020-01-31 22:23:40 --> 404 Page Not Found: Bowernd/assets2
+ERROR - 2020-01-31 22:23:50 --> 404 Page Not Found: Faviconpng/index
+ERROR - 2020-01-31 22:32:55 --> 404 Page Not Found: Bowernd/assets2
+ERROR - 2020-01-31 22:39:39 --> 404 Page Not Found: Faviconpng/index
+ERROR - 2020-01-31 22:44:54 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 22:44:54 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 23:14:35 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 23:14:35 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 23:15:05 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 23:15:05 --> 404 Page Not Found: Bower_components/datatables.net-bs
+ERROR - 2020-01-31 23:16:13 --> 404 Page Not Found: Bower_components/pace
+ERROR - 2020-01-31 23:16:13 --> 404 Page Not Found: Bower_components/datatables.net-bs
