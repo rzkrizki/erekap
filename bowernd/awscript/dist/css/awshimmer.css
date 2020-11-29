@@ -1,0 +1,46 @@
+/*
+ * Template Name: AWScipt Shimmer Effect Place Holder
+ * Author: AWSomplak
+ * Email: ajiwahyusomplak@gmail.com
+ * File: scss
+ */
+@-webkit-keyframes placeHolderAWShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+@keyframes placeHolderAWShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.awshimmer {
+  display: inline-block;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderAWShimmer;
+  animation-name: placeHolderAWShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  -webkit-background-size: 800px 104px;
+  background-size: 800px 104px;
+  height: inherit;
+  position: relative;
+}
+
+.awshimmer-round {
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=awshimmer.css.map */

@@ -1,0 +1,19 @@
+#closebt-container {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+.closebt {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.2s;
+	cursor: pointer;
+	&:hover {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(90deg);
+	}
+}

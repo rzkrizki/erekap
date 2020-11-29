@@ -1,0 +1,78 @@
+/*
+Template Name: AWScipt
+Author: AWSomplak
+Email: ajiwahyusomplak@gmail.com
+File: scss
+*/
+// Variables
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+$bodyfont:'Poppins', sans-serif;
+$headingfont:'Poppins', sans-serif;
+
+//apps colors
+$primary: #ff0;
+$white: #fff;
+$color_fuscous_gray_approx: #505050;
+$black: #000;
+$black_13: rgba(0,0,0,.13);
+$black_50: rgba(0,0,0,.5);
+$color_mexican_red_approx: #a01d1d;
+$color_celeste_30_approx: rgba(204,204,204,.3);
+$white_60: rgba(255,255,255,.6);
+$color_cararra_approx: #ebebeb;
+$color_alto_approx: #ddd;
+$black_10: rgba(0,0,0,.1);
+$black_40: rgba(0,0,0,.4);
+$black_20: rgba(0,0,0,.2);
+$black_5: rgba(0,0,0,.05);
+$color_mercury_approx: #e7e7e7;
+$black_30: rgba(0,0,0,.3);
+$color_dodger_blue_approx: #12bdff;
+$color_heavy_metal_approx: #2d2d2d;
+$black_25: rgba(0,0,0,.25);
+$white_40: rgba(255,255,255,.4);
+$color_boulder_approx: #797979;
+$color_masala_95_approx: rgba(58,58,58,.95);
+$color_tuatara_approx: #363535;
+$color_masala_approx: #3a3a3a;
+$color_mine_shaft_approx: #333;
+$color_stack_approx: #8b8b8b;
+$white_30: rgba(255,255,255,.3);
+$color_san_marino_approx: #45619d;
+$color_picton_blue_approx: #55acee;
+
+//tab colors
+$color_bon_jour_approx: #e0e0e0;
+$color_river_bed_approx: #424f5a;
+$color_gunsmoke_approx: #7c848a;
+$color_cornflower_blue_approx: #458cff;
+
+//fonts
+$font_roboto:	Roboto;
+$font_serif:	Serif;
+
+//urls
+$url_0: url('../../img/widget-menu-expand.png');
+$url_1: url('../../img/widget-grip-vertical.png');
+$url_2: url('../../img/widget-menu-pointer.png');
+$url_3: url('../../img/widget-menu-single.png');
+$url_4: url('../../img/widget-menu-multiple.png');
+$url_5: url('../../img/widget-menu-bucket-hover.png');
+$url_6: url('../../img/widget-menu-bucket-rest.png');
+$url_7: url('../../img/widget-menu-line.png');
+$url_8: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==');
+$url_9: url('../../img/widget-grip-horizontal.png');
+$url_10: url('../../img/projections/gray/mercator@2x.png');
+$url_11: url('../../img/projections/blue/mercator@2x.png');
+$url_12: url('../../img/projections/gray/miller@2x.png');
+$url_13: url('../../img/projections/blue/miller@2x.png');
+$url_14: url('../../img/projections/gray/equa@2x.png');
+$url_15: url('../../img/projections/blue/equa@2x.png');
+$url_16: url('../../img/projections/gray/winkel@2x.png');
+$url_17: url('../../img/projections/blue/winkel@2x.png');
+$url_18: url('../../img/projections/gray/eckert3@2x.png');
+$url_19: url('../../img/projections/blue/eckert3@2x.png');
+$url_20: url('../../img/projections/gray/eckert5@2x.png');
+$url_21: url('../../img/projections/blue/eckert5@2x.png');
+

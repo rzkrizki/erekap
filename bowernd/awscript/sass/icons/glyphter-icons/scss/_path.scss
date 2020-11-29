@@ -1,0 +1,13 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+	font-family: generalicons;
+	src: url('#{$font-path}/Glyphter.eot?v=#{$version}');
+	src: url('#{$font-path}/Glyphter.eot?#iefix&v=#{$version}') format('embedded-opentype'),
+	    url('#{$font-path}/Glyphter.woff?v=#{$version}') format('woff'),
+	    url('#{$font-path}/Glyphter.ttf?v=#{$version}') format('truetype'),
+	    url('#{$font-path}/Glyphter.svg?v=#{$version}#Glyphter') format('svg');
+	font-weight: $font-weight;
+  	font-style: normal;
+}

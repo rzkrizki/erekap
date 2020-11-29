@@ -1,0 +1,12 @@
+# https and www redirect
+<IfModule mod_rewrite.c>
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond %{HTTP_HOST} ^apd\.teknopol\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.apd\.teknopol\.id$
+RewriteRule ^/?$ "https\:\/\/www\.apd\.teknopol\.id\/" [R=301,L]
+

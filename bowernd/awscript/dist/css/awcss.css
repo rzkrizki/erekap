@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.content-w {
+  min-height: 100%;
+}
+
+.app {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  color: #fff;
+  background-color: #fff;
+}
+
+.menu-position-top.menu-w.menu-has-selected-link {
+  z-index: 2;
+}
+
+.app .app-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.chartdiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#selector {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-size: 16px;
+}
+#selector input, #selector select {
+  padding: 5px;
+}
+
+/*# sourceMappingURL=awcss.css.map */

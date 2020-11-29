@@ -1,0 +1,1798 @@
+/*
+Template Name: AWScipt
+Author: AWSomplak
+Email: ajiwahyusomplak@gmail.com
+File: scss
+*/
+
+/* AWStructure */
+
+//@extend-elements
+//original selectors
+//.app, .app input, .app a, .app textarea, .app select
+%extend_1 {
+    font-family: $font_roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+//original selectors
+//.app input, .app select
+%extend_2 {
+    -webkit-touch-callout: auto!important;
+    -webkit-user-select: auto!important;
+    -khtml-user-select: auto!important;
+    -moz-user-select: auto!important;
+    -ms-user-select: auto!important;
+    //Instead of the line below you could use @include user-select($select)
+    user-select: auto!important;
+}
+
+//original selectors
+//.app .app-brand-label, .app .app-brand-logo-white
+%extend_3 {
+    -webkit-transition: all 1000ms cubic-bezier(.175,.885,.335,1.05);
+    -moz-transition: all 1000ms cubic-bezier(.175,.885,.335,1.05);
+    -o-transition: all 1000ms cubic-bezier(.175,.885,.335,1.05);
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all 1000ms cubic-bezier(.175,.885,.335,1.05);
+}
+
+//original selectors
+//.app .app-map .map-popup ul li.headline a, .app .app-map .map-popup ul li.headline span
+%extend_4 {
+    width: auto;
+    font-size: 10px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: $black_40;
+}
+
+//original selectors
+//.app-controls .pixel-type .icon-pixel-diamond, .app-controls .pixel-type .icon-pixel-hexagon
+%extend_5 {
+    font-size: 25px;
+    border-bottom-style: none;
+    top: 3px;
+}
+
+//original selectors
+//.app-controls .control-dropdown input, .ui-autocomplete li
+%extend_6 {
+    font-family: $font_roboto;
+    font-size: 18px;
+    line-height: 34px;
+    outline: none;
+    position: relative;
+}
+
+//original selectors
+//.app-controls.portrait .widget ul >li.menu-color >a, .app-controls.portrait .widget ul >li.menu-color >a >span, .app-controls.portrait .widget ul >li.menu-color >a >input
+%extend_7 {
+    font-size: 13px;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    border: none;
+    color: $color_boulder_approx;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+
+html {
+    overflow: hidden;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+}
+.app {
+    overflow: hidden;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    color: $white;
+    background-color: $color_fuscous_gray_approx;
+    @extend %extend_1;
+    input {
+        @extend %extend_1;
+        @extend %extend_2;
+    }
+    a {
+        @extend %extend_1;
+    }
+    textarea {
+        @extend %extend_1;
+    }
+    select {
+        @extend %extend_1;
+        @extend %extend_2;
+    }
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        //Instead of the line below you could use @include user-select($select)
+        user-select: none;
+    }
+    .app-map {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        .map-container {
+            opacity: 1;
+            position: relative;
+            height: 100%;
+            > div {
+                position: relative;
+                height: 100%;
+            }
+            * {
+                cursor: inherit;
+            }
+        }
+        .map-toolbar {
+            top: 100px;
+            left: 20px;
+            width: 55px;
+            z-index: 4;
+        }
+        .map-popup {
+            width: 208px;
+            position: absolute;
+            display: block;
+            z-index: 2;
+            margin: 0;
+            padding: 0;
+            opacity: 1;
+            > ul ul {
+                left: auto;
+                right: 100%;
+            }
+            .control-types:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            ul li.headline {
+                height: 30px;
+                line-height: 30px;
+                font-size: 10px;
+                overflow: hidden;
+                padding: 0 5px 0 0;
+                a {
+                    @extend %extend_4;
+                    &.active {
+                        color: $black;
+                        background-color: transparent;
+                        i:before {
+                            border-color: $black;
+                        }
+                    }
+                    &:hover {
+                        color: $black;
+                        background-color: transparent;
+                        i:before {
+                            border-color: $black;
+                        }
+                    }
+                    &.grip {
+                        background-image: $url_9;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 10px;
+                        height: 30px;
+                        margin: 0 8px 0 5px;
+                        float: left;
+                    }
+                    &.prop-tool {
+                        float: right;
+                        > i {
+                            font-size: 13px;
+                        }
+                    }
+                }
+                span {
+                    @extend %extend_4;
+                }
+                i {
+                    width: 25px;
+                }
+            }
+        }
+    }
+    &.loading {
+        .amcharts-zoom-control {
+            opacity: 0;
+        }
+        .app-map .map-container {
+            opacity: .3;
+            -webkit-transform: scale3d(.8,.8,1);
+            -moz-transform: scale3d(.8,.8,1);
+            -ms-transform: scale3d(.8,.8,1);
+            -o-transform: scale3d(.8,.8,1);
+            //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: scale3d(.8,.8,1);
+            * {
+                cursor: progress;
+                pointer-events: none;
+            }
+        }
+    }
+    .app-brand {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 20.31px;
+        font-weight: 300;
+        margin: 0;
+        z-index: 1;
+        .app-brand-label {
+            display: inline-block;
+            position: relative;
+            top: -1px;
+            line-height: 20px;
+            > strong {
+                font-weight: 500;
+            }
+            > span.badge {
+                background-color: $primary;
+                display: inline-block;
+                //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                border-radius: 2px;
+                padding: 4px 3px 3px;
+                font-size: 6px;
+                font-weight: 400;
+                line-height: 6px;
+                position: absolute;
+                bottom: -16px;
+                left: 0;
+            }
+        }
+        .app-brand-icon {
+            padding: 0 15px 0 0;
+            display: inline-block;
+        }
+        &.dark .app-brand-label {
+            color: $black;
+        }
+    }
+    .app-brand-label {
+        @extend %extend_3;
+    }
+    .app-brand-logo-white {
+        @extend %extend_3;
+    }
+    .widget {
+        position: absolute;
+        z-index: 2;
+        ul {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            z-index: 2;
+            display: block;
+            //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            box-shadow: 0 8px 15px 0 $black_13;
+            li {
+                position: relative;
+                display: block;
+                border-style: none none solid none;
+                border-width: 1px;
+                outline: none;
+                &.expandable {
+                    > a {
+                        background-image: $url_0;
+                        background-repeat: no-repeat;
+                        background-position: right bottom;
+                    }
+                    > ul > li > a {
+                        text-align: left;
+                        > i {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                input {
+                    background-color: transparent;
+                    border: none;
+                    display: block;
+                    outline: none;
+                    padding: 25px;
+                    font-size: 13px;
+                    font-weight: 300;
+                    color: $black_50;
+                }
+                > ul {
+                    -webkit-transform: matrix(1,0,0,1,0,0);
+                    -moz-transform: matrix(1,0,0,1,0,0);
+                    -ms-transform: matrix(1,0,0,1,0,0);
+                    -o-transform: matrix(1,0,0,1,0,0);
+                    -webkit-transition: opacity 250ms cubic-bezier(.175,.885,.335,1.05);
+                    -moz-transition: opacity 250ms cubic-bezier(.175,.885,.335,1.05);
+                    -o-transition: opacity 250ms cubic-bezier(.175,.885,.335,1.05);
+                    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                    transition: opacity 250ms cubic-bezier(.175,.885,.335,1.05);
+                }
+                i {
+                    width: 32px;
+                    height: 32px;
+                    line-height: 32px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 32px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-align: center;
+                    position: relative;
+                    > span {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                    }
+                    > .menu-type {
+                        background-position: top-left;
+                        z-index: 2;
+                        background-size: 13px;
+                    }
+                }
+                &.menu-images {
+                    > a {
+                        line-height: 57px;
+                        padding: 5px 15px;
+                    }
+                    > ul {
+                        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                        border-radius: 2px;
+                        > li {
+                            &:first-child {
+                                //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                                border-radius: 0;
+                                border-style: none none solid none;
+                            }
+                            &:last-child {
+                                //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                                border-radius: 0;
+                                border-style: none none solid none;
+                            }
+                            > a {
+                                border-style: none none none solid;
+                                border-width: 1px;
+                                border-color: $color_celeste_30_approx;
+                                padding: 5px 15px;
+                                line-height: 55px;
+                                > i {
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                    a.ui-draggable-dragging {
+                        border: none;
+                        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                        border-radius: 2px;
+                        background-color: $white_60;
+                        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                        box-shadow: 0 8px 15px 0 $black_13;
+                        padding: 5px 11px;
+                        -webkit-transition: box-shadow 500ms cubic-bezier(.175,.885,.335,1.05);
+                        -moz-transition: box-shadow 500ms cubic-bezier(.175,.885,.335,1.05);
+                        -o-transition: box-shadow 500ms cubic-bezier(.175,.885,.335,1.05);
+                        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                        transition: box-shadow 500ms cubic-bezier(.175,.885,.335,1.05);
+                        pointer-events: none;
+                    }
+                }
+                &.padding {
+                    padding: 9px;
+                }
+                &.menu-color {
+                    white-space: nowrap;
+                    &.white {
+                        display: inline-block;
+                        padding: 0;
+                    }
+                    i {
+                        background-image: $url_8;
+                        background-repeat: repeat;
+                        background-size: 10px;
+                        background-position: top left;
+                        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                        border-radius: 2px;
+                        overflow: hidden;
+                        border: 1px solid $color_alto_approx;
+                    }
+                    input {
+                        margin: 0 0 0 8px;
+                        display: inline-block;
+                        height: 32px;
+                        line-height: 30px;
+                        width: 133px;
+                        border: 1px solid $black_10;
+                        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                        border-radius: 2px;
+                        padding: 0 8px;
+                    }
+                }
+                .pixel-type {
+                    line-height: 50px;
+                    > i {
+                        color: $black;
+                        width: auto;
+                        height: auto;
+                        font-size: 15px;
+                    }
+                    &:hover i {
+                        color: $primary;
+                    }
+                    &.active i {
+                        color: $primary;
+                    }
+                }
+                > i {
+                    float: left;
+                    color: $black;
+                    font-size: 20px;
+                    line-height: 40px;
+                    + div {
+                        margin-left: 50px;
+                    }
+                }
+                a span.info {
+                    float: right;
+                    font-size: 15px;
+                    opacity: .2;
+                    padding: 0 15px 0 0;
+                }
+                &.headline a.grip {
+                    background-image: $url_1;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 5px;
+                    margin: 0 auto;
+                    padding: 5px 0;
+                }
+                &.open > ul {
+                    pointer-events: all;
+                    opacity: 1;
+                    -webkit-transition-delay: 250ms;
+                    -moz-transition-delay: 250ms;
+                    -ms-transition-delay: 250ms;
+                    -o-transition-delay: 250ms;
+                }
+                &.menu-bucket i {
+                    width: 42px;
+                    height: 42px;
+                    > .menu-layer {
+                        position: relative;
+                        background-position: center;
+                        z-index: 1;
+                        width: 32px;
+                        height: 32px;
+                        margin: 5px;
+                        &:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 32px;
+                        }
+                    }
+                }
+                &.menu-pointer i {
+                    width: 42px;
+                    height: 42px;
+                }
+                &.menu-slider.padding {
+                    padding: 8px 15px;
+                }
+                .control-type.arrow-type {
+                    > i {
+                        color: $black_20;
+                        width: 100%;
+                        height: 50px;
+                        font-size: 20px;
+                        line-height: 55px;
+                        border-style: none solid none none;
+                        border-width: 1px;
+                        border-color: $black_5;
+                    }
+                    &:last-child i {
+                        border-style: none;
+                    }
+                    &:hover i {
+                        color: $black;
+                    }
+                    &.active i {
+                        color: $black;
+                    }
+                }
+            }
+            ul {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                margin: 0 3px;
+                padding: 0;
+                min-width: 208px;
+                opacity: 0;
+                pointer-events: none;
+            }
+            &.gray {
+                li {
+                    background-color: $color_cararra_approx;
+                    border-color: $color_celeste_30_approx;
+                    &.open {
+                        background-color: $white;
+                    }
+                    &.active {
+                        background-color: $white;
+                    }
+                    &.dragging {
+                        background-color: $white;
+                    }
+                    &.white {
+                        background-color: $white;
+                        border-color: $color_celeste_30_approx;
+                    }
+                    &.less-hover:hover {
+                        background-color: $color_cararra_approx;
+                        border-color: $color_celeste_30_approx;
+                    }
+                    &.disabled:hover {
+                        background-color: $color_cararra_approx;
+                        border-color: $color_celeste_30_approx;
+                    }
+                }
+                &.hover li:hover {
+                    background-color: $white;
+                }
+            }
+            &.white {
+                li {
+                    background-color: $white;
+                    border-color: $color_celeste_30_approx;
+                    &.gray {
+                        background-color: $color_cararra_approx;
+                        border-color: $color_celeste_30_approx;
+                        a.active {
+                            background-color: $white;
+                            border-color: $color_celeste_30_approx;
+                        }
+                    }
+                    &.open {
+                        background-color: $color_cararra_approx;
+                    }
+                    &.active {
+                        background-color: $color_cararra_approx;
+                    }
+                    &.dragging {
+                        background-color: $color_cararra_approx;
+                    }
+                    &.less-hover:hover {
+                        background-color: $white;
+                        border-color: $color_celeste_30_approx;
+                    }
+                    &.disabled:hover {
+                        background-color: $white;
+                        border-color: $color_celeste_30_approx;
+                    }
+                }
+                &.hover li:hover {
+                    background-color: $color_cararra_approx;
+                }
+            }
+            > li > a {
+                display: block;
+                vertical-align: middle;
+                color: $black;
+                text-decoration: none;
+                height: 42px;
+                font-size: 14px;
+                line-height: 42px;
+                padding: 5px;
+                text-align: center;
+            }
+        }
+        li {
+            &:first-child {
+                //Instead of the line below you could use @include border-top-left-radius($radius)
+                border-top-left-radius: 2px;
+                //Instead of the line below you could use @include border-top-right-radius($radius)
+                border-top-right-radius: 2px;
+            }
+            &:last-child {
+                //Instead of the line below you could use @include border-bottom-left-radius($radius)
+                border-bottom-left-radius: 2px;
+                //Instead of the line below you could use @include border-bottom-right-radius($radius)
+                border-bottom-right-radius: 2px;
+                border-style: none;
+            }
+        }
+        &.map-toolbar ul li.expandable ul:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 3px;
+            height: 100%;
+            top: 0;
+            left: -3px;
+        }
+        &.map-popup ul li.expandable ul:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 3px;
+            height: 100%;
+            top: 0;
+            right: -3px;
+        }
+        input.error {
+            color: $color_mexican_red_approx;
+        }
+        &.drag ul li {
+            pointer-events: none;
+        }
+    }
+    .menu-bucket {
+        &:hover > a i > .menu-layer:before {
+            background-image: $url_5;
+        }
+        &.active > a i > .menu-layer:before {
+            background-image: $url_5;
+        }
+        &.open > a i > .menu-layer:before {
+            background-image: $url_5;
+        }
+        i > .menu-layer:before {
+            background-image: $url_6;
+        }
+        &.disabled:hover i > .menu-layer:before {
+            background-image: $url_6;
+        }
+    }
+    .menu-title {
+        overflow: hidden;
+    }
+    .col-group {
+        > * {
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+        }
+        &.group-quarter > * {
+            width: 25%;
+        }
+        &.group-third > * {
+            width: 33.3333333%;
+        }
+        &.group-half > * {
+            width: 50%;
+        }
+    }
+    .control-slider {
+        height: 19px;
+        padding: 15px 0 0;
+        &:hover .ui-slider-range {
+            background-color: $color_dodger_blue_approx;
+        }
+    }
+    .ui-slider {
+        height: 5px;
+        position: relative;
+        display: block;
+        background-color: $color_mercury_approx;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 2px;
+    }
+    .ui-slider-range {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $primary;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 2px;
+    }
+    .ui-slider-handle {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 22px;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: -1px 0 3px 0 $black_30;
+        background-color: $white;
+        outline: none;
+        margin-left: -11px;
+        top: -9px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .control-section {
+        float: left;
+        white-space: nowrap;
+        > div {
+            margin: 0;
+            padding: 15px 20px;
+            position: relative;
+        }
+    }
+    .control-slider-container {
+        position: relative;
+        height: 50px;
+        line-height: 45px;
+        margin: 0 0 15px;
+        > * {
+            position: absolute;
+            top: 0;
+        }
+        > div {
+            left: 80px;
+            right: 0;
+            padding: 21px 45px 0 0;
+            z-index: 1;
+            small {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: $primary;
+                font-size: 13px;
+                font-weight: 300;
+                text-align: right;
+            }
+            .ui-slider {
+                background-color: $color_fuscous_gray_approx;
+                //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                border-radius: 2px;
+                .control-slider-container > label {
+                    width: 75px;
+                    padding: 0 0 0 25px;
+                }
+            }
+        }
+        > label {
+            left: 0;
+            font-size: 13px;
+            font-weight: 300;
+        }
+    }
+    .btn {
+        border: none;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 2px;
+        background-color: $color_heavy_metal_approx;
+        color: $white;
+        padding: 12px;
+        margin: 0 10px 0 0;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            background-color: $color_fuscous_gray_approx;
+        }
+        > i {
+            height: 18px;
+            line-height: 18px;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0 5px 0 0;
+        }
+    }
+    .btn-export {
+        font-size: 13px;
+    }
+    .btn-blue {
+        color: $white;
+        background-color: $primary;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1px 1px 0 $black_25;
+        &:hover {
+            background-color: $color_dodger_blue_approx;
+        }
+    }
+    .btn-large {
+        padding: 20px 40px;
+        font-size: 17px;
+        margin: 0 0 15px;
+    }
+    .btn-generate {
+        width: 100%;
+    }
+    .btn-export-close {
+        color: $white_40;
+    }
+    .btn-sidemenu {
+        background-color: transparent;
+        opacity: 0;
+        pointer-events: none;
+        display: inline-block;
+        width: 0;
+        line-height: 42px;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        > span {
+            display: block;
+            margin: 0 0 3px;
+            padding: 2px 0;
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 2px;
+            background-color: $white;
+        }
+    }
+    .fx {
+        -webkit-transition: all 400ms cubic-bezier(.175,.885,.335,1.05);
+        -moz-transition: all 400ms cubic-bezier(.175,.885,.335,1.05);
+        -o-transition: all 400ms cubic-bezier(.175,.885,.335,1.05);
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: all 400ms cubic-bezier(.175,.885,.335,1.05);
+    }
+    &.exporting {
+        .amcharts-zoom-control {
+            opacity: 0;
+        }
+        .app-controls {
+            top: 20px!important;
+            right: 20px!important;
+            bottom: 20px!important;
+            left: 20px!important;
+            .btn-toggle {
+                .ui-icon {
+                    top: 0;
+                    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                    text-shadow: 0 2px 0 $primary;
+                }
+                &:hover .ui-icon {
+                    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                    text-shadow: 0 2px 0 $color_dodger_blue_approx;
+                }
+            }
+            .app-controls-export {
+                left: 25px;
+            }
+            &.portrait {
+                width: auto;
+                .app-controls-export {
+                    top: 25px;
+                    left: 0;
+                }
+                .btn-toggle > span {
+                    top: 0;
+                }
+            }
+        }
+        .app-controls-settings {
+            opacity: 0;
+            z-index: 1;
+            pointer-events: none;
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        .app-controls-export {
+            opacity: 1;
+            z-index: 2;
+            pointer-events: all;
+        }
+        .app-map .map-container {
+            -webkit-transform: scale3d(.8,.8,1);
+            -moz-transform: scale3d(.8,.8,1);
+            -ms-transform: scale3d(.8,.8,1);
+            -o-transform: scale3d(.8,.8,1);
+            //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: scale3d(.8,.8,1);
+            * {
+                cursor: progress;
+                pointer-events: none;
+            }
+        }
+        .app-cover .label {
+            opacity: 0;
+            top: 40%;
+        }
+    }
+    &.generating {
+        .app-map {
+            .map-controls {
+                left: -55px!important;
+            }
+            .map-toolbar {
+                left: -92px!important;
+            }
+            .map-container * {
+                cursor: progress;
+                pointer-events: none;
+                pointer-events: all;
+            }
+        }
+        .app-brand {
+            cursor: progress;
+            pointer-events: none;
+        }
+        .app-social {
+            cursor: progress;
+            pointer-events: none;
+        }
+        /* .app-controls {
+            bottom: -100%!important;
+        } /*
+        .amcharts-zoom-control {
+            opacity: 0;
+        }
+        &.cover .app-cover {
+            pointer-events: none;
+        }
+    }
+    &.init {
+        /* .app-controls {
+            bottom: -100%!important;
+        } */
+        .app-map {
+            .map-controls {
+                left: -55px!important;
+            }
+            .map-toolbar {
+                left: -92px!important;
+            }
+        }
+    }
+    .app-cover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $black_30;
+        z-index: 1337;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .app-cover-circle {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: translateY(-50%);
+        .app-cover-text {
+            font-family: $font_serif;
+            font-weight: 400;
+            font-size: 18px;
+            fill: $white;
+        }
+    }
+    &.cover {
+        .app-cover {
+            opacity: 1;
+            pointer-events: all;
+            .label {
+                top: 50%;
+            }
+        }
+        .amcharts-zoom-control {
+            opacity: 0;
+        }
+    }
+    &.lovely-ie {
+        .app-cover {
+            display: none;
+        }
+        &.cover .app-cover {
+            display: block;
+        }
+        &.generating.cover .app-cover {
+            display: none;
+        }
+    }
+    .app-controls-export {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        .map-export-buttons {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1337;
+        }
+        .map-export {
+            height: 100%;
+        }
+        .CodeMirror-line {
+            position: relative;
+            left: 20px;
+            opacity: 0;
+            -webkit-transition: all 400ms 400ms cubic-bezier(.175,.885,.335,1.05);
+            -moz-transition: all 400ms 400ms cubic-bezier(.175,.885,.335,1.05);
+            -o-transition: all 400ms 400ms cubic-bezier(.175,.885,.335,1.05);
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: all 400ms 400ms cubic-bezier(.175,.885,.335,1.05);
+        }
+    }
+    &.exporting-fadein {
+        .app-controls-export {
+            .CodeMirror-line {
+                opacity: 1;
+                left: 0;
+            }
+            .map-export-buttons {
+                opacity: 1;
+            }
+        }
+        .btn-drag {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .app-controls .btn-toggle > span {
+            top: 32px;
+        }
+    }
+    .menu-pointer i {
+        background-image: $url_2;
+    }
+    .menu-single > a > i > .menu-type {
+        background-image: $url_3;
+    }
+    .menu-multiple > a > i > .menu-type {
+        background-image: $url_4;
+    }
+    .menu-line i {
+        background-image: $url_7;
+    }
+    .expandable > a > i > .menu-type {
+        opacity: .2;
+    }
+    .menu-text i {
+        font-size: 25px;
+        font-family: $font_roboto;
+        font-style: normal;
+    }
+    &.dragging .app-map {
+        pointer-events: none;
+    }
+}
+a {
+    text-decoration: none;
+    outline: none;
+    &:hover {
+        text-decoration: none;
+        outline: none;
+    }
+}
+::selection {
+    background: $primary;
+}
+::-moz-selection {
+    background: $primary;
+}
+.app-templates {
+    display: none;
+}
+.amcharts-zoom-control {
+    opacity: 1;
+    -webkit-transition: opacity 400ms cubic-bezier(.175,.885,.335,1.05);
+    -moz-transition: opacity 400ms cubic-bezier(.175,.885,.335,1.05);
+    -o-transition: opacity 400ms cubic-bezier(.175,.885,.335,1.05);
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: opacity 400ms cubic-bezier(.175,.885,.335,1.05);
+}
+.app-controls {
+    position: fixed;
+    /* bottom: -100%; */
+    /* right: 20px; */
+    font-size: 15px;
+    z-index: 2;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 2px;
+    color: $color_boulder_approx;
+    background-color: $color_masala_95_approx;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 8px 15px 0 $black_13;
+    .app-controls-settings {
+        margin: 0 0 0 25px;
+        z-index: 2;
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+    .btn-toggle {
+        color: $primary;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        line-height: 25px;
+        background-color: $color_tuatara_approx;
+        font-size: 12px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+        overflow: hidden;
+        > span {
+            display: block;
+            position: absolute;
+            white-space: nowrap;
+            top: 50%;
+            -webkit-transform: rotate(-90deg) translateX(-50%);
+            -moz-transform: rotate(-90deg) translateX(-50%);
+            -ms-transform: rotate(-90deg) translateX(-50%);
+            -o-transform: rotate(-90deg) translateX(-50%);
+            //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: rotate(-90deg) translateX(-50%);
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+            transform-origin: top left;
+        }
+        .ui-icon {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 12px;
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: 0 -2px 0 $primary;
+            outline: none;
+            cursor: pointer;
+            line-height: 25px;
+            margin-left: 5px;
+            top: 7px;
+            color: $color_tuatara_approx;
+        }
+        &:hover {
+            background-color: $color_tuatara_approx;
+            color: $color_dodger_blue_approx;
+            .ui-icon {
+                //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                text-shadow: 0 -2px $color_dodger_blue_approx;
+            }
+        }
+    }
+    .control-section {
+        border-width: 1px;
+        border-color: $black_10;
+        height: 100px;
+        &.section-zero {
+            max-width: 190px;
+            border-style: none solid none none;
+            > div {
+                padding-top: 10px;
+            }
+        }
+        &.section-one {
+            min-width: 260px;
+            border-style: none solid none none;
+            > div {
+                padding-top: 10px;
+            }
+        }
+        &.section-two {
+            min-width: 260px;
+            border-style: none solid none none;
+            > div {
+                padding-top: 10px;
+            }
+        }
+        &.section-three {
+            min-width: 260px;
+            border-style: none solid none none;
+            > div {
+                padding-top: 10px;
+            }
+        }
+        &.section-four {
+            min-width: 260px;
+            border-style: none solid none none;
+            > div {
+                padding-top: 10px;
+            }
+        }
+    }
+    &.portrait {
+        height: auto;
+        .control-section {
+            float: none;
+            min-width: 0;
+            height: auto;
+            border: none;
+            &.section-zero {
+                max-width: 100%;
+            }
+            > div {
+                padding: 0 20px;
+            }
+            &.section-two {
+                label {
+                    left: 0;
+                    font-size: 13px;
+                    line-height: 70px;
+                    font-weight: 300;
+                    float: left;
+                }
+                > div {
+                    padding: 0 20px;
+                }
+                .control-types {
+                    margin: 0 0 0 80px;
+                    &:after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                }
+                .pixel-type > i {
+                    border: none;
+                }
+            }
+            &.section-four > div {
+                padding: 15px 20px;
+            }
+        }
+        .app-controls-settings {
+            margin: 25px 0 0;
+        }
+        .btn-toggle {
+            top: 0;
+            right: 0;
+            bottom: auto;
+            width: auto;
+            height: auto;
+            > span {
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+                transform: none;
+                top: 0;
+                width: auto;
+                position: relative;
+                text-align: right;
+                padding: 0 21px 0 0;
+            }
+        }
+        .border-bottom {
+            background-color: $black_10;
+            display: block;
+            margin: 0 -20px;
+            height: 1px;
+        }
+        .control-dropdown {
+            border: none;
+            margin: 0 0 14px;
+            height: 70px;
+            vertical-align: middle;
+            line-height: 70px;
+            label {
+                left: 0;
+                font-size: 13px;
+                line-height: 70px;
+                font-weight: 300;
+                float: left;
+            }
+            input {
+                font-size: 15px;
+                line-height: 70px;
+            }
+            .ui-combobox {
+                margin: 0 0 0 80px;
+            }
+            .ui-button {
+                line-height: 70px;
+                height: 70px;
+            }
+            .ui-autocomplete {
+                //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                box-shadow: 0 -8px 15px 0 $black_13;
+            }
+        }
+        .pixel-type {
+            width: 25%;
+            line-height: 70px;
+            font-size: 20px;
+            > i {
+                width: 25px;
+            }
+        }
+        .control-slider-container {
+            margin: 10px 0 5px;
+        }
+        &.open.scrollable {
+            top: 20px;
+            .app-controls-settings {
+                height: 100%;
+                overflow: auto;
+            }
+        }
+        .widget ul > li.menu-color {
+            float: none;
+            width: 100%;
+            > a {
+                @extend %extend_7;
+                > span {
+                    @extend %extend_7;
+                    display: inline-block;
+                    width: 80px;
+                }
+                > input {
+                    @extend %extend_7;
+                }
+            }
+        }
+    }
+    .widget {
+        position: relative;
+        > ul {
+            //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            box-shadow: none;
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        ul > li.menu-color {
+            border: none;
+            width: 50%;
+            float: left;
+            > a {
+                margin: 0;
+                padding: 0;
+                color: $color_boulder_approx;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: left;
+                > i {
+                    margin: 0 10px 0 0;
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid $color_mine_shaft_approx;
+                }
+                > span {
+                    vertical-align: middle;
+                    line-height: 25px;
+                }
+                > input {
+                    display: none;
+                }
+            }
+            &:hover > a > span {
+                color: $color_stack_approx;
+            }
+        }
+    }
+    .pixel-type {
+        line-height: 71px;
+        > i {
+            border-width: 1px;
+            border-color: $black_10;
+            border-style: none none solid none;
+            font-size: 19px;
+            color: $color_masala_approx;
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: -1px 0 $color_boulder_approx,0 1px $color_boulder_approx,1px 0 $color_boulder_approx,0 -1px $color_boulder_approx;
+            display: block;
+            -webkit-transition: color 250ms ease-out;
+            -moz-transition: color 250ms ease-out;
+            -o-transition: color 250ms ease-out;
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: color 250ms ease-out;
+            position: relative;
+        }
+        .icon-pixel-circle {
+            top: 2px;
+        }
+        .icon-pixel-square {
+            top: 2px;
+        }
+        .icon-pixel-diamond {
+            @extend %extend_5;
+        }
+        .icon-pixel-hexagon {
+            @extend %extend_5;
+        }
+        &:nth-child(odd) > i {
+            border-right-style: solid;
+        }
+        &:hover > i {
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: -1px 0 $color_stack_approx,0 1px $color_stack_approx,1px 0 $color_stack_approx,0 -1px $color_stack_approx;
+        }
+        &.active > i {
+            color: $primary;
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: -1px 0 $primary,0 1px $primary,1px 0 $primary,0 -1px $primary;
+        }
+    }
+    .control-dropdown {
+        border-bottom: 1px dashed $color_boulder_approx;
+        color: $color_boulder_approx;
+        margin-bottom: 14px;
+        input::-webkit-input-placeholder {
+            color: $color_boulder_approx;
+            font-weight: 300;
+            opacity: .6;
+        }
+        input {
+            background-color: transparent;
+            line-height: 37px;
+            border: none;
+            font-weight: 400;
+            color: $primary;
+            width: 100%;
+            @extend %extend_6;
+            &:-moz-placeholder {
+                color: $color_boulder_approx;
+                font-weight: 300;
+                opacity: .6;
+            }
+            &:-ms-input-placeholder {
+                color: $color_boulder_approx;
+                font-weight: 300;
+                opacity: .6;
+            }
+        }
+        input::-moz-placeholder {
+            color: $color_boulder_approx;
+            font-weight: 300;
+            opacity: .6;
+        }
+        label {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 29px;
+            display: block;
+        }
+        .ui-combobox {
+            position: relative;
+        }
+        .ui-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 34px;
+            vertical-align: middle;
+            font-size: 15px;
+            color: $color_masala_approx;
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: 0 2px 0 $color_boulder_approx;
+            outline: none;
+            cursor: pointer;
+            line-height: 34px;
+            text-align: right;
+            &:hover {
+                //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                text-shadow: 0 2px $color_stack_approx;
+            }
+        }
+    }
+    .border-bottom {
+        display: none;
+    }
+    .btn-drag {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+        background-color: transparent;
+        opacity: 1;
+        &:hover {
+            background-color: transparent;
+        }
+        .ui-grip {
+            display: block;
+            width: 11px;
+            padding: 7px;
+            line-height: 25px;
+            > span {
+                display: block;
+                height: 1px;
+                background-color: $white_30;
+                margin-bottom: 2px;
+            }
+        }
+    }
+    &.open .btn-toggle {
+        .ui-icon {
+            top: 0;
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: 0 2px 0 $primary;
+        }
+        &:hover .ui-icon {
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: 0 2px 0 $color_dodger_blue_approx;
+        }
+    }
+}
+.ui-autocomplete {
+    background-color: $color_masala_95_approx;
+    color: $color_boulder_approx;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 3;
+    position: absolute;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 -8px 15px 0 $black_13;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 2px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    li {
+        @extend %extend_6;
+        font-weight: 300;
+        cursor: pointer;
+        border-color: $black_10;
+        border-style: none none solid none;
+        border-width: 1px;
+        font-size: 13px;
+        padding: 10px;
+        &:hover {
+            color: $primary;
+            background-color: $black_10;
+        }
+        &.ui-state-focus {
+            color: $primary;
+            background-color: $black_10;
+        }
+        &.ui-menu-item-icon {
+            padding-left: 80px;
+            line-height: 50px;
+            background-repeat: no-repeat;
+            background-position: 10px;
+        }
+        &:focus {
+            background-color: $black_10;
+        }
+        &.ui-state-active {
+            background-color: $black_10;
+        }
+        &.icon-mercator {
+            background-size: 53px 50px;
+            background-image: $url_10;
+            &:focus {
+                background-size: 53px 50px;
+                background-image: $url_11;
+            }
+            &:hover {
+                background-size: 53px 50px;
+                background-image: $url_11;
+            }
+        }
+        &.icon-miller {
+            background-size: 53px 38px;
+            background-image: $url_12;
+            &:focus {
+                background-size: 53px 38px;
+                background-image: $url_13;
+            }
+            &:hover {
+                background-size: 53px 38px;
+                background-image: $url_13;
+            }
+        }
+        &.icon-equirectangular {
+            background-size: 53px 28px;
+            background-image: $url_14;
+            &:focus {
+                background-size: 53px 28px;
+                background-image: $url_15;
+            }
+            &:hover {
+                background-size: 53px 28px;
+                background-image: $url_15;
+            }
+        }
+        &.icon-winkel3 {
+            background-size: 51px 34px;
+            background-image: $url_16;
+            &:focus {
+                background-size: 51px 34px;
+                background-image: $url_17;
+            }
+            &:hover {
+                background-size: 51px 34px;
+                background-image: $url_17;
+            }
+        }
+        &.icon-eckert3 {
+            background-size: 51px 29px;
+            background-image: $url_18;
+            &:focus {
+                background-size: 51px 29px;
+                background-image: $url_19;
+            }
+            &:hover {
+                background-size: 51px 29px;
+                background-image: $url_19;
+            }
+        }
+        &.icon-eckert5 {
+            background-size: 51px 29px;
+            background-image: $url_20;
+            &:focus {
+                background-size: 51px 29px;
+                background-image: $url_21;
+            }
+            &:hover {
+                background-size: 51px 29px;
+                background-image: $url_21;
+            }
+        }
+    }
+}
+.section-zero {
+    display: none;
+}
+.section-one {
+    display: none;
+}
+.section-two {
+    display: none;
+}
+.section-three {
+    display: none;
+}
+.open {
+    .section-zero {
+        display: inline-block;
+    }
+    .section-one {
+        display: inline-block;
+    }
+    .section-two {
+        display: inline-block;
+    }
+    .section-three {
+        display: inline-block;
+    }
+    &.portrait {
+        .section-zero {
+            display: block;
+        }
+        .section-one {
+            display: block;
+        }
+        .section-two {
+            display: block;
+        }
+        .section-three {
+            display: block;
+        }
+    }
+}
+.hidden-landscape {
+    display: none;
+}
+.portrait {
+    .hidden-landscape {
+        display: block;
+    }
+    .widget.projection {
+        display: none;
+    }
+}
+.ONHOLD_app-controls {
+    width: 340px;
+    height: 147px;
+    &.open {
+        width: 1175px;
+        height: 147px;
+        &.portrait {
+            width: 315px;
+            height: 588px;
+        }
+    }
+    &.portrait {
+        width: 315px;
+        height: 172px;
+    }
+}
+.app-social {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+    color: $white;
+    font-weight: 300;
+    z-index: 1;
+    > strong {
+        font-weight: 400;
+    }
+    .getConnected {
+        display: inline-block;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 8px 15px 0 $black_13;
+        margin: 0 0 0 20px;
+        > a {
+            font-size: 20px;
+            line-height: 15px;
+            vertical-align: middle;
+            display: inline-block;
+            color: $white;
+            padding: 12px 14px;
+            &.btn-facebook {
+                background-color: $color_san_marino_approx;
+                //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                border-radius: 2px 0 0 2px;
+            }
+            &.btn-twitter {
+                background-color: $color_picton_blue_approx;
+                //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                border-radius: 0 2px 2px 0;
+            }
+        }
+    }
+}
+.menu-projection {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 42px;
+    cursor: pointer;
+    &.icon-mercator {
+        background-size: 53px 50px;
+        background-image: $url_11;
+    }
+    &.icon-miller {
+        background-size: 53px 38px;
+        background-image: $url_13;
+    }
+    &.icon-equirectangular {
+        background-size: 53px 28px;
+        background-image: $url_15;
+    }
+    &.icon-winkel3 {
+        background-size: 51px 34px;
+        background-image: $url_17;
+    }
+    &.icon-eckert3 {
+        background-size: 51px 29px;
+        background-image: $url_19;
+    }
+    &.icon-eckert5 {
+        background-size: 51px 29px;
+        background-image: $url_21;
+    }
+}
+
+.menu-position-top.menu-w.menu-has-selected-link {
+    z-index: 2;
+}

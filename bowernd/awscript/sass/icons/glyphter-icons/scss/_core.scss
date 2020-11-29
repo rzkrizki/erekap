@@ -1,0 +1,12 @@
+// Base Class Definition
+// -------------------------
+
+[class*=#{$css-prefix}-]:before {
+  	display: inline-block;
+	font-family: generalicons;
+	font-style: normal;
+	font-weight: $font-weight;
+	line-height: $line-height-base;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}

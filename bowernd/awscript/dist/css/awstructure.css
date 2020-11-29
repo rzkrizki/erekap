@@ -1,0 +1,1541 @@
+html, body, .app {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+::selection, ::-moz-selection {
+  background: #ff0;
+}
+
+.app {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  color: #fff;
+  background-color: #505050;
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 400;
+}
+.app input, .app a, .app textarea, .app select {
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 400;
+}
+.app input, .app select {
+  -webkit-touch-callout: auto !important;
+  -webkit-user-select: auto !important;
+  -khtml-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+}
+.app * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.app .app-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.app .app-map .map-container {
+  opacity: 1;
+}
+.app.loading .app-map .map-container {
+  opacity: 0.3;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  -moz-transform: scale3d(0.8, 0.8, 1);
+  -ms-transform: scale3d(0.8, 0.8, 1);
+  -o-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+}
+
+.chartdiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app-templates {
+  display: none;
+}
+
+.app .app-brand {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20.31px;
+  font-weight: 300;
+  margin: 0;
+  z-index: 1;
+}
+.app .app-brand .app-brand-label {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  line-height: 20px;
+}
+.app .app-brand .app-brand-label > strong {
+  font-weight: 500;
+}
+.app .app-brand .app-brand-label > span.badge {
+  background-color: #ff0;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 4px 3px 3px;
+  font-size: 6px;
+  font-weight: 400;
+  line-height: 6px;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}
+.app .app-brand .app-brand-icon {
+  padding: 0 15px 0 0;
+  display: inline-block;
+}
+.app .app-brand-label, .app .app-brand-logo-white {
+  -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -moz-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -o-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  transition: all 1000ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+}
+.app .app-brand.dark .app-brand-label {
+  color: #000;
+}
+.app .app-map .map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.app .app-map .map-container > div {
+  position: relative;
+  height: 100%;
+}
+.app .widget {
+  position: absolute;
+  z-index: 2;
+}
+.app .widget ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  display: block;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.13);
+}
+.app .widget ul li {
+  position: relative;
+  display: block;
+  border-style: none none solid none;
+  border-width: 1px;
+  outline: none;
+}
+.app .widget li:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.app .widget li:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-style: none;
+}
+.app .widget ul > li > a {
+  display: block;
+  vertical-align: middle;
+  color: #000;
+  text-decoration: none;
+  height: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  padding: 5px;
+  text-align: center;
+}
+.app .widget ul li a span.info {
+  float: right;
+  font-size: 15px;
+  opacity: 0.2;
+  padding: 0 15px 0 0;
+}
+.app .widget ul li.expandable > a {
+  background-image: url(../img/widget-menu-expand.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.app .widget.map-toolbar ul li.expandable ul:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: -3px;
+}
+.app .widget.map-popup ul li.expandable ul:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  right: -3px;
+}
+.app .widget ul li.headline a.grip {
+  background-image: url(../img/widget-grip-vertical.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 5px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+.app .widget ul li input {
+  background-color: transparent;
+  border: none;
+  display: block;
+  outline: none;
+  padding: 25px;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}
+.app .widget input.error {
+  color: #a01d1d;
+}
+.app .widget ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin: 0 3px;
+  padding: 0;
+  min-width: 208px;
+  opacity: 0;
+  pointer-events: none;
+}
+.app .widget ul li > ul {
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transition: opacity 250ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -moz-transition: opacity 250ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -o-transition: opacity 250ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  transition: opacity 250ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+}
+.app .widget ul li.open > ul {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  -ms-transition-delay: 250ms;
+  -o-transition-delay: 250ms;
+}
+.app .widget ul li.expandable > ul > li > a {
+  text-align: left;
+}
+.app .widget ul li.expandable > ul > li > a > i {
+  margin-right: 10px;
+}
+.app .widget.drag ul li {
+  pointer-events: none;
+}
+.app .widget ul li i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.app .widget ul li i > span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.app .widget ul li i > .menu-type {
+  background-position: top-left;
+  z-index: 2;
+  background-size: 13px;
+}
+.app .widget ul li.menu-bucket i > .menu-layer {
+  position: relative;
+  background-position: center;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+}
+.app .widget ul li.menu-bucket i > .menu-layer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+}
+.app .widget ul li.menu-pointer i, .app .widget ul li.menu-bucket i {
+  width: 42px;
+  height: 42px;
+}
+.app .menu-pointer i {
+  background-image: url(../img/widget-menu-pointer.png);
+}
+.app .menu-single > a > i > .menu-type {
+  background-image: url(../img/widget-menu-single.png);
+}
+.app .menu-multiple > a > i > .menu-type {
+  background-image: url(../img/widget-menu-multiple.png);
+}
+.app .menu-bucket:hover > a i > .menu-layer:before, .app .menu-bucket.active > a i > .menu-layer:before, .app .menu-bucket.open > a i > .menu-layer:before {
+  background-image: url(../img/widget-menu-bucket-hover.png);
+}
+.app .menu-bucket i > .menu-layer:before, .app .menu-bucket.disabled:hover i > .menu-layer:before {
+  background-image: url(../img/widget-menu-bucket-rest.png);
+}
+.app .menu-line i {
+  background-image: url(../img/widget-menu-line.png);
+}
+.app .expandable > a > i > .menu-type {
+  opacity: 0.2;
+}
+.app .menu-text i {
+  font-size: 25px;
+  font-family: Serif;
+  font-style: normal;
+}
+.app .menu-title {
+  overflow: hidden;
+}
+.app .expandable > a > i > .menu-type {
+  opacity: 0.2;
+}
+.app .widget ul li.menu-images > a {
+  line-height: 57px;
+  padding: 5px 15px;
+}
+.app .widget ul li.menu-images > ul {
+  border-radius: 2px;
+}
+.app .widget ul li.menu-images > ul > li:first-child, .app .widget ul li.menu-images > ul > li:last-child {
+  border-radius: 0;
+  border-style: none none solid none;
+}
+.app .widget ul li.menu-images > ul > li > a {
+  border-style: none none none solid;
+  border-width: 1px;
+  border-color: rgba(204, 204, 204, 0.3);
+  padding: 5px 15px;
+  line-height: 55px;
+}
+.app .widget ul li.menu-images > ul > li > a > i {
+  margin: 0 auto;
+}
+.app .widget ul li.menu-images a.ui-draggable-dragging {
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.13);
+  padding: 5px 11px;
+  -webkit-transition: box-shadow 500ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -moz-transition: box-shadow 500ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -o-transition: box-shadow 500ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  transition: box-shadow 500ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  pointer-events: none;
+}
+.app .widget ul.gray.hover li:hover {
+  background-color: #fff;
+}
+.app .widget ul.gray li {
+  background-color: #ebebeb;
+  border-color: rgba(204, 204, 204, 0.3);
+}
+.app .widget ul.gray li.open, .app .widget ul.gray li.active, .app .widget ul.gray li.dragging {
+  background-color: #fff;
+}
+.app .widget ul.white li.gray {
+  background-color: #ebebeb;
+  border-color: rgba(204, 204, 204, 0.3);
+}
+.app .widget ul.gray li.less-hover:hover, .app .widget ul.gray li.disabled:hover {
+  background-color: #ebebeb;
+  border-color: rgba(204, 204, 204, 0.3);
+}
+.app .widget ul.white.hover li:hover {
+  background-color: #ebebeb;
+}
+.app .widget ul.white li {
+  background-color: #fff;
+  border-color: rgba(204, 204, 204, 0.3);
+}
+.app .widget ul.white li.open, .app .widget ul.white li.active, .app .widget ul.white li.dragging {
+  background-color: #ebebeb;
+}
+.app .widget ul.gray li.white {
+  background-color: #fff;
+  border-color: rgba(204, 204, 204, 0.3);
+}
+.app .widget ul.white li.less-hover:hover, .app .widget ul.white li.disabled:hover, .app .widget ul.white li.gray a.active {
+  background-color: #fff;
+  border-color: rgba(204, 204, 204, 0.3);
+}
+.app .widget ul li.padding {
+  padding: 9px;
+}
+.app .widget ul li.menu-slider.padding {
+  padding: 8px 15px;
+}
+.app .widget ul li.menu-color {
+  white-space: nowrap;
+}
+.app .widget ul li.menu-color.white {
+  display: inline-block;
+  padding: 0;
+}
+.app .widget ul li.menu-color i {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);
+  background-repeat: repeat;
+  background-size: 10px;
+  background-position: top left;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.app .widget ul li.menu-color input {
+  margin: 0 0 0 8px;
+  padding: 0;
+  display: inline-block;
+  height: 32px;
+  line-height: 30px;
+  width: 133px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 0 8px;
+}
+.app .app-map .map-toolbar {
+  top: 100px;
+  left: 20px;
+  width: 55px;
+  z-index: 4;
+}
+.app .app-map .map-popup {
+  width: 208px;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+}
+.app .app-map .map-popup > ul ul {
+  left: auto;
+  right: 100%;
+}
+.app .app-map .map-popup .control-types:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.app .app-map .map-popup ul li.headline {
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+  overflow: hidden;
+  padding: 0 5px 0 0;
+}
+.app .app-map .map-popup ul li.headline a, .app .app-map .map-popup ul li.headline span {
+  width: auto;
+  font-size: 10px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.4);
+}
+.app .app-map .map-popup ul li.headline i {
+  width: 25px;
+}
+.app .app-map .map-popup ul li.headline a.active, .app .app-map .map-popup ul li.headline a:hover {
+  color: #000;
+  background-color: transparent;
+}
+.app .app-map .map-popup ul li.headline a.active i:before, .app .app-map .map-popup ul li.headline a:hover i:before {
+  border-color: #000;
+}
+.app .app-map .map-popup ul li.headline a.grip {
+  background-image: url(../img/widget-grip-horizontal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 30px;
+  margin: 0 8px 0 5px;
+  float: left;
+}
+.app .app-map .map-popup ul li.headline a.prop-tool {
+  float: right;
+}
+.app .app-map .map-popup ul li.headline a.prop-tool > i {
+  font-size: 13px;
+}
+.app .widget ul li .pixel-type {
+  line-height: 50px;
+}
+.app .widget ul li .pixel-type > i {
+  color: #000;
+  width: auto;
+  height: auto;
+  font-size: 15px;
+}
+.app .widget ul li .pixel-type:hover i, .app .widget ul li .pixel-type.active i {
+  color: #ff0;
+}
+.app .widget ul li > i {
+  float: left;
+  color: #000;
+  font-size: 20px;
+  line-height: 40px;
+}
+.app .widget ul li > i + div {
+  margin-left: 50px;
+}
+.app .widget ul li .control-type.arrow-type > i {
+  color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 55px;
+  border-style: none solid none none;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+.app .widget ul li .control-type.arrow-type:last-child i {
+  border-style: none;
+}
+.app .widget ul li .control-type.arrow-type:hover i, .app .widget ul li .control-type.arrow-type.active i {
+  color: #000;
+}
+.app .col-group > * {
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+}
+.app .col-group.group-quarter > * {
+  width: 25%;
+}
+.app .col-group.group-third > * {
+  width: 33.33333%;
+}
+.app .col-group.group-half > * {
+  width: 50%;
+}
+.app .control-slider {
+  height: 19px;
+  padding: 15px 0 0;
+}
+.app .ui-slider {
+  height: 5px;
+  position: relative;
+  display: block;
+  background-color: #e7e7e7;
+  border-radius: 2px;
+}
+.app .ui-slider-range {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ff0;
+  border-radius: 2px;
+}
+.app .ui-slider-handle {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  box-shadow: -1px 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  outline: none;
+  margin-left: -11px;
+  top: -9px;
+  cursor: pointer;
+  z-index: 1;
+}
+.app .control-slider:hover .ui-slider-range {
+  background-color: #12bdff;
+}
+.app .control-section {
+  float: left;
+  white-space: nowrap;
+}
+.app .control-section > div {
+  margin: 0;
+  padding: 15px 20px;
+  position: relative;
+}
+.app .control-slider-container {
+  position: relative;
+  height: 50px;
+  line-height: 45px;
+  margin: 0 0 15px;
+}
+.app .control-slider-container > * {
+  position: absolute;
+  top: 0;
+}
+.app .control-slider-container > div {
+  left: 80px;
+  right: 0;
+  padding: 21px 45px 0 0;
+  z-index: 1;
+}
+.app .control-slider-container > div small {
+  position: absolute;
+  top: 0;
+}
+.app .control-slider-container > div .ui-slider {
+  background-color: #505050;
+  border-radius: 2px;
+}
+.app .control-slider-container > div .ui-slider .control-slider-container > label {
+  width: 75px;
+  padding: 0 0 0 25px;
+}
+.app .control-slider-container > label {
+  left: 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+.app .control-slider-container > div small {
+  right: 0;
+  color: #ff0;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: right;
+}
+.app .btn {
+  border: none;
+  border-radius: 2px;
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 12px;
+  margin: 0 10px 0 0;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+.app .btn:hover {
+  background-color: #505050;
+}
+.app .btn > i {
+  height: 18px;
+  line-height: 18px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+.app .btn-export {
+  font-size: 13px;
+}
+.app .btn-blue {
+  color: #fff;
+  background-color: #ff0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+.app .btn-blue:hover {
+  background-color: #12bdff;
+}
+.app .btn-large {
+  padding: 20px 40px;
+  font-size: 17px;
+  margin: 0 0 15px;
+}
+.app .btn-generate {
+  width: 100%;
+}
+.app .btn-export-close {
+  color: rgba(255, 255, 255, 0.4);
+}
+.app .btn-sidemenu {
+  background-color: transparent;
+  opacity: 0;
+  pointer-events: none;
+  display: inline-block;
+  width: 0;
+  line-height: 42px;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+.app .btn-sidemenu > span {
+  display: block;
+  margin: 0 0 3px;
+  padding: 2px 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.app .fx {
+  -webkit-transition: all 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -moz-transition: all 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -o-transition: all 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+}
+.app.dragging .app-map {
+  pointer-events: none;
+}
+.app .app-map .map-container * {
+  cursor: inherit;
+}
+.app.exporting .app-map .map-container *, .app.generating .app-map .map-container *, .app.loading .app-map .map-container * {
+  cursor: progress;
+  pointer-events: none;
+}
+.app.generating .app-brand, .app.generating .app-social {
+  cursor: progress;
+  pointer-events: none;
+}
+.app.generating .app-map .map-container * {
+  pointer-events: all;
+}
+.app.init .app-controls, .app.generating .app-controls {
+  bottom: -100% !important;
+}
+.app.init .app-map .map-controls, .app.generating .app-map .map-controls {
+  left: -55px !important;
+}
+.app.init .app-map .map-toolbar, .app.generating .app-map .map-toolbar {
+  left: -92px !important;
+}
+.app .app-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1337;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.app .app-cover-circle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.app .app-cover-circle .app-cover-text {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 18px;
+  fill: #fff;
+}
+.app.cover .app-cover {
+  opacity: 1;
+  pointer-events: all;
+}
+.app.generating.cover .app-cover {
+  pointer-events: none;
+}
+.app.cover .app-cover .label {
+  top: 50%;
+}
+.app.exporting .app-cover .label {
+  opacity: 0;
+  top: 40%;
+}
+.app.lovely-ie .app-cover {
+  display: none;
+}
+.app.lovely-ie.cover .app-cover {
+  display: block;
+}
+.app.lovely-ie.generating.cover .app-cover {
+  display: none;
+}
+
+.amcharts-zoom-control {
+  opacity: 1;
+}
+
+.app.loading .amcharts-zoom-control, .app.generating .amcharts-zoom-control, .app.exporting .amcharts-zoom-control, .app.cover .amcharts-zoom-control {
+  opacity: 0;
+}
+
+.amcharts-zoom-control {
+  -webkit-transition: opacity 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -moz-transition: opacity 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -o-transition: opacity 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  transition: opacity 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+}
+
+.app-controls {
+  position: fixed;
+  bottom: -100%;
+  right: 20px;
+  font-size: 15px;
+  z-index: 2;
+  border-radius: 2px;
+  color: #797979;
+  background-color: rgba(58, 58, 58, 0.95);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.13);
+}
+.app-controls .app-controls-settings {
+  margin: 0 0 0 25px;
+  z-index: 2;
+}
+.app-controls .app-controls-settings:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.app-controls .btn-toggle {
+  color: #ff0;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  line-height: 25px;
+  background-color: #363535;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+.app-controls .btn-toggle > span {
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  -webkit-transform: rotate(-90deg) translateX(-50%);
+  -moz-transform: rotate(-90deg) translateX(-50%);
+  -ms-transform: rotate(-90deg) translateX(-50%);
+  -o-transform: rotate(-90deg) translateX(-50%);
+  transform: rotate(-90deg) translateX(-50%);
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+}
+.app-controls .btn-toggle .ui-icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #3a3a3a;
+  text-shadow: 0 -2px 0 #ff0;
+  outline: none;
+  cursor: pointer;
+  line-height: 25px;
+  margin-left: 5px;
+  top: 7px;
+  color: #363535;
+}
+.app-controls .btn-toggle:hover {
+  background-color: #363535;
+  color: #12bdff;
+}
+.app-controls .btn-toggle:hover .ui-icon {
+  text-shadow: 0 -2px #12bdff;
+}
+.app-controls .control-section {
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  height: 147px;
+}
+.app-controls .control-section.section-zero {
+  max-width: 190px;
+  border-style: none solid none none;
+}
+.app-controls.portrait .control-section.section-zero {
+  max-width: 100%;
+}
+.app-controls .control-section.section-zero > div {
+  padding-top: 10px;
+}
+.app-controls .control-section.section-one {
+  min-width: 260px;
+  border-style: none solid none none;
+}
+.app-controls .control-section.section-one > div {
+  padding-top: 10px;
+}
+.app-controls .control-section.section-two {
+  min-width: 260px;
+  border-style: none solid none none;
+}
+.app-controls .control-section.section-two > div {
+  padding: 0;
+}
+.app-controls .control-section.section-three {
+  min-width: 260px;
+  border-style: none solid none none;
+}
+.app-controls .control-section.section-three > div {
+  padding: 15px 20px 0;
+}
+.app-controls .control-section.section-four {
+  min-width: 280px;
+}
+.app-controls .control-section.section-four > div {
+  padding-top: 15px;
+}
+.app-controls .control-section.section-four > div > button:last-child {
+  margin: 0;
+}
+.app-controls.open .btn-toggle .ui-icon {
+  top: 0;
+  text-shadow: 0 2px 0 #ff0;
+}
+
+.app.exporting .app-controls .btn-toggle .ui-icon {
+  top: 0;
+  text-shadow: 0 2px 0 #ff0;
+}
+
+.app-controls.open .btn-toggle:hover .ui-icon, .app.exporting .app-controls .btn-toggle:hover .ui-icon {
+  text-shadow: 0 2px 0 #12bdff;
+}
+
+.app-controls .widget {
+  position: relative;
+}
+.app-controls .widget > ul {
+  box-shadow: none;
+}
+.app-controls .widget > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.app-controls .widget ul > li.menu-color {
+  border: none;
+  width: 50%;
+  float: left;
+}
+.app-controls .widget ul > li.menu-color > a {
+  margin: 0;
+  padding: 0;
+  color: #797979;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+}
+.app-controls .widget ul > li.menu-color > a > i {
+  margin: 0 10px 0 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #333;
+}
+.app-controls .widget ul > li.menu-color > a > span {
+  vertical-align: middle;
+  line-height: 25px;
+}
+.app-controls .widget ul > li.menu-color:hover > a > span {
+  color: #8b8b8b;
+}
+.app-controls .widget ul > li.menu-color > a > input {
+  display: none;
+}
+.app-controls .pixel-type {
+  line-height: 71px;
+}
+.app-controls .pixel-type > i {
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-style: none none solid none;
+  font-size: 19px;
+  color: #3a3a3a;
+  text-shadow: -1px 0 #797979, 0 1px #797979, 1px 0 #797979, 0 -1px #797979;
+  display: block;
+  -webkit-transition: color 250ms ease-out;
+  -moz-transition: color 250ms ease-out;
+  -o-transition: color 250ms ease-out;
+  transition: color 250ms ease-out;
+  position: relative;
+}
+.app-controls .pixel-type:nth-child(odd) > i {
+  border-right-style: solid;
+}
+.app-controls .pixel-type .icon-pixel-circle, .app-controls .pixel-type .icon-pixel-square {
+  top: 2px;
+}
+.app-controls .pixel-type .icon-pixel-diamond, .app-controls .pixel-type .icon-pixel-hexagon {
+  font-size: 25px;
+  border-bottom-style: none;
+  top: 3px;
+}
+.app-controls .pixel-type:hover > i {
+  text-shadow: -1px 0 #8b8b8b, 0 1px #8b8b8b, 1px 0 #8b8b8b, 0 -1px #8b8b8b;
+}
+.app-controls .pixel-type.active > i {
+  color: #ff0;
+  text-shadow: -1px 0 #ff0, 0 1px #ff0, 1px 0 #ff0, 0 -1px #ff0;
+}
+.app-controls .control-dropdown {
+  border-bottom: 1px dashed #797979;
+  color: #797979;
+  margin-bottom: 14px;
+}
+.app-controls .control-dropdown input::-webkit-input-placeholder, .app-controls .control-dropdown input:-moz-placeholder, .app-controls .control-dropdown input::-moz-placeholder, .app-controls .control-dropdown input:-ms-input-placeholder {
+  color: #797979;
+  font-weight: 300;
+  opacity: 0.6;
+}
+.app-controls .control-dropdown label {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29px;
+  display: block;
+}
+.app-controls .control-dropdown input {
+  background-color: transparent;
+  line-height: 37px;
+  border: none;
+  font-weight: 400;
+  color: #ff0;
+  width: 100%;
+}
+.app-controls .control-dropdown .ui-combobox {
+  position: relative;
+}
+.app-controls .control-dropdown .ui-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 34px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #3a3a3a;
+  text-shadow: 0 2px 0 #797979;
+  outline: none;
+  cursor: pointer;
+  line-height: 34px;
+  text-align: right;
+}
+.app-controls .control-dropdown .ui-button:hover {
+  text-shadow: 0 2px #8b8b8b;
+}
+
+.ui-autocomplete {
+  background-color: rgba(58, 58, 58, 0.95);
+  color: #797979;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 3;
+  position: absolute;
+  box-shadow: 0 -8px 15px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app-controls .control-dropdown input {
+  font-family: roboto;
+  font-size: 18px;
+  line-height: 34px;
+  outline: none;
+  position: relative;
+}
+
+.ui-autocomplete li {
+  font-family: roboto;
+  font-size: 18px;
+  line-height: 34px;
+  outline: none;
+  position: relative;
+  font-weight: 300;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.ui-autocomplete li:hover, .ui-autocomplete li.ui-state-focus {
+  color: #ff0;
+}
+
+.section-zero, .section-one, .section-two, .section-three {
+  display: none;
+}
+
+.open .section-zero, .open .section-one, .open .section-two, .open .section-three {
+  display: inline-block;
+}
+
+.app-controls.portrait {
+  height: auto;
+}
+.app-controls.portrait .app-controls-settings {
+  margin: 25px 0 0;
+}
+.app-controls.portrait.open.scrollable {
+  top: 20px;
+}
+.app-controls.portrait.open.scrollable .app-controls-settings {
+  height: 100%;
+  overflow: auto;
+}
+.app-controls.portrait .btn-toggle {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  width: auto;
+  height: auto;
+}
+.app-controls.portrait .btn-toggle > span {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  top: 0;
+  width: auto;
+  position: relative;
+  text-align: right;
+  padding: 0 21px 0 0;
+}
+.app-controls.portrait .control-section {
+  float: none;
+  min-width: 0;
+  height: auto;
+  border: none;
+}
+.app-controls.portrait .control-section > div {
+  padding: 0 20px;
+}
+.app-controls .border-bottom {
+  display: none;
+}
+.app-controls.portrait .border-bottom {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 -20px;
+  height: 1px;
+}
+.app-controls.portrait .widget ul > li.menu-color {
+  float: none;
+  width: 100%;
+}
+.app-controls.portrait .widget ul > li.menu-color > a {
+  font-size: 13px;
+  height: 70px;
+  line-height: 70px;
+  vertical-align: middle;
+  border: none;
+  color: #797979;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.app-controls.portrait .widget ul > li.menu-color > a > span, .app-controls.portrait .widget ul > li.menu-color > a > input {
+  font-size: 13px;
+  height: 70px;
+  line-height: 70px;
+  vertical-align: middle;
+  border: none;
+  color: #797979;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.app-controls.portrait .widget ul > li.menu-color > a > span {
+  display: inline-block;
+  width: 80px;
+}
+.app-controls.portrait .control-section.section-two label {
+  left: 0;
+  font-size: 13px;
+  line-height: 70px;
+  font-weight: 300;
+  float: left;
+}
+.app-controls.portrait .control-section.section-two > div {
+  padding: 0 20px;
+}
+.app-controls.portrait .control-section.section-two .control-types {
+  margin: 0 0 0 80px;
+}
+.app-controls.portrait .control-section.section-two .control-types:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.app-controls.portrait .control-section.section-two .pixel-type > i {
+  border: none;
+}
+.app-controls.portrait .control-dropdown {
+  border: none;
+  margin: 0;
+  height: 70px;
+  vertical-align: middle;
+  line-height: 70px;
+}
+.app-controls.portrait .control-dropdown label {
+  left: 0;
+  font-size: 13px;
+  line-height: 70px;
+  font-weight: 300;
+  float: left;
+}
+.app-controls.portrait .control-dropdown input {
+  font-size: 15px;
+  line-height: 70px;
+}
+.app-controls.portrait .control-dropdown .ui-combobox {
+  margin: 0 0 0 80px;
+}
+.app-controls.portrait .control-dropdown .ui-button {
+  line-height: 70px;
+  height: 70px;
+}
+.app-controls.portrait .control-dropdown .ui-autocomplete {
+  box-shadow: 0 -8px 15px 0 rgba(0, 0, 0, 0.13);
+}
+.app-controls.portrait .pixel-type {
+  width: 25%;
+  line-height: 70px;
+  font-size: 20px;
+}
+.app-controls.portrait .pixel-type > i {
+  width: 25px;
+}
+.app-controls.portrait .control-section.section-four > div {
+  padding: 15px 20px;
+}
+.app-controls.portrait .control-slider-container {
+  margin: 10px 0 5px;
+}
+
+.hidden-landscape {
+  display: none;
+}
+
+.portrait .hidden-landscape {
+  display: block;
+}
+
+.open.portrait .section-zero, .open.portrait .section-one, .open.portrait .section-two, .open.portrait .section-three {
+  display: block;
+}
+
+.app.exporting .app-map .map-container {
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  -moz-transform: scale3d(0.8, 0.8, 1);
+  -ms-transform: scale3d(0.8, 0.8, 1);
+  -o-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+}
+.app .app-controls-export {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+.app .app-controls-export .map-export-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1337;
+}
+.app .app-controls-export .map-export {
+  height: 100%;
+}
+.app .app-controls-export .CodeMirror-line {
+  position: relative;
+  left: 20px;
+  opacity: 0;
+  -webkit-transition: all 400ms 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -moz-transition: all 400ms 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -o-transition: all 400ms 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  transition: all 400ms 400ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+}
+.app.exporting .app-controls {
+  top: 20px !important;
+  right: 20px !important;
+  bottom: 20px !important;
+  left: 20px !important;
+}
+.app.exporting .app-controls-settings {
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.app.exporting .app-controls-settings:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.app.exporting .app-controls-export {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: all;
+}
+.app.exporting-fadein .app-controls-export .CodeMirror-line {
+  opacity: 1;
+  left: 0;
+}
+.app.exporting-fadein .app-controls-export .map-export-buttons {
+  opacity: 1;
+}
+.app.exporting .app-controls .app-controls-export {
+  left: 25px;
+}
+.app.exporting .app-controls.portrait {
+  width: auto;
+}
+.app.exporting .app-controls.portrait .btn-toggle > span {
+  top: 0;
+}
+.app.exporting .app-controls.portrait .app-controls-export {
+  top: 25px;
+  left: 0;
+}
+.app.exporting-fadein .app-controls .btn-toggle > span {
+  top: 32px;
+}
+.app.exporting-fadein .btn-drag {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.app-controls .btn-drag {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  background-color: transparent;
+  opacity: 1;
+}
+.app-controls .btn-drag:hover {
+  background-color: transparent;
+}
+.app-controls .btn-drag .ui-grip {
+  display: block;
+  width: 11px;
+  padding: 7px;
+  line-height: 25px;
+}
+.app-controls .btn-drag .ui-grip > span {
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 2px;
+}
+
+.ONHOLD_app-controls {
+  width: 340px;
+  height: 147px;
+}
+.ONHOLD_app-controls.open {
+  width: 1175px;
+  height: 147px;
+}
+.ONHOLD_app-controls.portrait {
+  width: 315px;
+  height: 172px;
+}
+.ONHOLD_app-controls.open.portrait {
+  width: 315px;
+  height: 588px;
+}
+
+.app-social {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  z-index: 1;
+}
+.app-social > strong {
+  font-weight: 400;
+}
+.app-social .getConnected {
+  display: inline-block;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.13);
+  margin: 0 0 0 20px;
+}
+.app-social .getConnected > a {
+  font-size: 20px;
+  line-height: 15px;
+  vertical-align: middle;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 14px;
+}
+.app-social .getConnected > a.btn-facebook {
+  background-color: #45619d;
+  border-radius: 2px 0 0 2px;
+}
+.app-social .getConnected > a.btn-twitter {
+  background-color: #55acee;
+  border-radius: 0 2px 2px 0;
+}
+
+.ui-autocomplete li {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-style: none none solid none;
+  border-width: 1px;
+  font-size: 13px;
+  padding: 10px;
+}
+.ui-autocomplete li.ui-menu-item-icon {
+  padding-left: 80px;
+  line-height: 50px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+.ui-autocomplete li:hover, .ui-autocomplete li:focus, .ui-autocomplete li.ui-state-focus, .ui-autocomplete li.ui-state-active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-projection {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 42px;
+  cursor: pointer;
+}
+
+.portrait .widget.projection {
+  display: none;
+}
+
+.ui-autocomplete li.icon-mercator {
+  background-size: 53px 50px;
+  background-image: url(../img/projections/gray/mercator@2x.png);
+}
+.ui-autocomplete li.icon-mercator:focus, .ui-autocomplete li.icon-mercator:hover {
+  background-size: 53px 50px;
+  background-image: url(../img/projections/blue/mercator@2x.png);
+}
+
+.menu-projection.icon-mercator {
+  background-size: 53px 50px;
+  background-image: url(../img/projections/blue/mercator@2x.png);
+}
+
+.ui-autocomplete li.icon-miller {
+  background-size: 53px 38px;
+  background-image: url(../img/projections/gray/miller@2x.png);
+}
+.ui-autocomplete li.icon-miller:focus, .ui-autocomplete li.icon-miller:hover {
+  background-size: 53px 38px;
+  background-image: url(../img/projections/blue/miller@2x.png);
+}
+
+.menu-projection.icon-miller {
+  background-size: 53px 38px;
+  background-image: url(../img/projections/blue/miller@2x.png);
+}
+
+.ui-autocomplete li.icon-equirectangular {
+  background-size: 53px 28px;
+  background-image: url(../img/projections/gray/equa@2x.png);
+}
+.ui-autocomplete li.icon-equirectangular:focus, .ui-autocomplete li.icon-equirectangular:hover {
+  background-size: 53px 28px;
+  background-image: url(../img/projections/blue/equa@2x.png);
+}
+
+.menu-projection.icon-equirectangular {
+  background-size: 53px 28px;
+  background-image: url(../img/projections/blue/equa@2x.png);
+}
+
+.ui-autocomplete li.icon-winkel3 {
+  background-size: 51px 34px;
+  background-image: url(../img/projections/gray/winkel@2x.png);
+}
+.ui-autocomplete li.icon-winkel3:focus, .ui-autocomplete li.icon-winkel3:hover {
+  background-size: 51px 34px;
+  background-image: url(../img/projections/blue/winkel@2x.png);
+}
+
+.menu-position-top.menu-w.menu-has-selected-link {
+  z-index: 2;
+}
+
+.menu-projection.icon-winkel3 {
+  background-size: 51px 34px;
+  background-image: url(../img/projections/blue/winkel@2x.png);
+}
+
+.ui-autocomplete li.icon-eckert3 {
+  background-size: 51px 29px;
+  background-image: url(../img/projections/gray/eckert3@2x.png);
+}
+.ui-autocomplete li.icon-eckert3:focus, .ui-autocomplete li.icon-eckert3:hover {
+  background-size: 51px 29px;
+  background-image: url(../img/projections/blue/eckert3@2x.png);
+}
+
+.menu-projection.icon-eckert3 {
+  background-size: 51px 29px;
+  background-image: url(../img/projections/blue/eckert3@2x.png);
+}
+
+.ui-autocomplete li.icon-eckert5 {
+  background-size: 51px 29px;
+  background-image: url(../img/projections/gray/eckert5@2x.png);
+}
+.ui-autocomplete li.icon-eckert5:focus, .ui-autocomplete li.icon-eckert5:hover {
+  background-size: 51px 29px;
+  background-image: url(../img/projections/blue/eckert5@2x.png);
+}
+
+.menu-projection.icon-eckert5 {
+  background-size: 51px 29px;
+  background-image: url(../img/projections/blue/eckert5@2x.png);
+}
+
+/*# sourceMappingURL=awstructure.css.map */

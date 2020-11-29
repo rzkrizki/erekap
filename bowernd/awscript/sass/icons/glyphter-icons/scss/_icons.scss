@@ -1,0 +1,27 @@
+.#{$css-prefix}-pixel-circle:before { content: "A"; }
+
+.#{$css-prefix}-pixel-square:before { content: "B"; }
+
+.#{$css-prefix}-pixel-diamond:before { content: "C"; }
+
+.#{$css-prefix}-pixel-hexagon:before { content: "D"; }
+
+.#{$css-prefix}-arrow-left:before { content: "E"; }
+
+.#{$css-prefix}-arrow-leftright:before { content: "F"; }
+
+.#{$css-prefix}-arrow-middle:before { content: "G"; }
+
+.#{$css-prefix}-arrow-right:before { content: "H"; }
+
+.#{$css-prefix}-arrow-thickness:before { content: "I"; }
+
+.#{$css-prefix}-arrow-dasharray:before { content: "J"; }
+
+.#{$css-prefix}-arrow-arc:before { content: "K"; }
+
+.#{$css-prefix}-prop-remove:before { content: "L"; }
+
+.#{$css-prefix}-prop-pin:before { content: "M"; }
+
+.#{$css-prefix}-prop-unpin:before { content: '\004D'; display: inline-block; height: 11px; border-bottom: 1px solid rgba(0, 0, 0, 0.3); overflow: hidden; }
