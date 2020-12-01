@@ -63,6 +63,9 @@
                 </div>
             </div>
             <div class="col-md-9">
+                <input type="text" class="form-control" id="id_kabupaten" value="<?= $id_kabupaten?>" hidden>
+                <input type="text" class="form-control" id="id_kecamatan" hidden>
+                <input type="text" class="form-control" id="id_kelurahan" hidden>
                 <div class="element-wrapper" style="padding-bottom: 30px;">
                     <div class="mx-auto" id="logoRow">
                         <span class='daft-title-wil'> 
@@ -76,8 +79,8 @@
                         <canvas id="pieChart" style="max-width: 500px;"></canvas>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3" style="padding: 20px;">
+                <div class="row" id="contentDiv">
+                    <!--div class="col-md-3" style="padding: 20px;">
                         <div class="card text-center" style="background-color: #1b1a28;">
                             <div class="card-header" style="font-weight: 600; font-size: 20px; color: #fff">
                                 1
@@ -124,10 +127,9 @@
                                 138.953
                             </div>
                         </div>
-                    </div>
-                    
-                   
+                    </div-->
                 </div>
+                <div class="row" id="summaryDiv"></div>
             </div>
         </div>
         </div>
@@ -142,7 +144,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 <script>
-
+/*
 var ctxP = document.getElementById("pieChart").getContext('2d');
     var myPieChart = new Chart(ctxP, {
       type: 'pie',
@@ -164,7 +166,7 @@ var ctxP = document.getElementById("pieChart").getContext('2d');
         responsive: true
       }
     });
-   
+*/ 
     function get_tree(){
         let tree = $("#tree2");
         tree.fancytree({
@@ -174,6 +176,7 @@ var ctxP = document.getElementById("pieChart").getContext('2d');
                 var id      = data.node.data.id;
                 var nama    = data.node.data.nama;
                 var logo    = data.node.data.logo;
+                load_information(id,tipe,nama,logo);
             },
 
             lazyLoad: function(event, data){    
@@ -199,8 +202,129 @@ var ctxP = document.getElementById("pieChart").getContext('2d');
                 }
             });
     }
-
     
+    
+    function load_information(id,tipe,nama,logo){
+       
+        if(tipe == "kecamatan"){
+            $('#id_kecamatan').val(id)
+            $('#id_kelurahan').val('0')
+            filter_data()
+        }
+
+        if(tipe == "kelurahan"){
+            $('#id_kelurahan').val(id)
+            
+            filter_data()
+        }
+
+    }
+
+    function filter_data(){
+        $.ajax({
+            type: 'POST',
+            url: '<?= base_url('rekap/filter_data'); ?>',
+            data: {
+				'id_kabupaten': $('#id_kabupaten').val(),
+                'id_kecamatan': $('#id_kecamatan').val(),
+				'id_kelurahan': $('#id_kelurahan').val(),
+            },
+   			dataType: 'json',
+            success: function(data) {
+              if(data.status == 'error'){
+				Swal.fire({
+					icon: 'error',
+					title: 'Oops...',
+					text: data.message,
+				})
+			  }else{
+                
+				if(data.result == ''){
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Belum ada laporan apapun',
+                    })
+                }else{
+                    $('#contentDiv').empty();
+                    var no = 1;
+                    $.each(data.result, function(index, element) {
+                        $('#contentDiv').append(
+                            `<div class="col-md-3" style="padding: 20px;">\
+                                <div class="card text-center" style="background-color: #1b1a28;">\
+                                    <div class="card-header" style="font-weight: 600; font-size: 20px; color: #fff">\
+                                         `+element.no_urut+`
+                                    </div>\
+                                    <br>\
+                                    <img class="card-img-top" src="`+element.paslon_image+`" alt="Card image cap" style="width: 100%; background-color: #ae0001; padding: 18px;" onclick="detail_pelanggaran(`+element.id_pelanggaran+`)">\
+                                    <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">\
+                                        `+element.total_suara+`
+                                    </div>\
+                                </div>\
+                            </div>\
+                        `);
+                        //   console.log(element);
+                        no += 1;
+                    });
+                    console.log(data);
+                }
+                // pie chart
+                var ctxP = document.getElementById("pieChart").getContext('2d');
+                var myPieChart = new Chart(ctxP, {
+                  type: 'pie',
+                  data: {
+                    labels: ["Paslon 1", "Paslon 2", "Paslon 3", "Paslon 4"],
+                    datasets: [{
+                      data: [data.result[0].total_suara, data.result[0].total_suara, data.result[0].total_suara, data.result[0].total_suara],
+                      backgroundColor: ["#52e8e8", "#00ffaa", "#00b2b2", "#a4ffff"],
+                      hoverBackgroundColor: ["#52e8e8", "#00ffaa", "#00b2b2", "#a4ffff"]
+                    }]
+                  },
+                  options: {
+                    legend: {
+                        display: false
+                     },
+                     tooltips: {
+                        enabled: true
+                     },
+                    responsive: true
+                  }
+                });
+                // pie chart
+                // summary
+                $('#summaryDiv').append(
+                    `<div class="offset-1 col-md-3" style="padding: 20px;">\
+                        <div class="card text-center" style="background-color: #1b1a28;">\
+                            <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">\
+                                `+data.summary.total_dpt+` </br> DPT\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="col-md-3" style="padding: 20px;">\
+                        <div class="card text-center" style="background-color: #1b1a28;">\
+                            <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">\
+                                Masuk </br> `+data.summary.suara_masuk_persen+`%\ 
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="col-md-3" style="padding: 20px;">\
+                        <div class="card text-center" style="background-color: #1b1a28;">\
+                            <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">\
+                                `+data.summary.total_tps+` </br> TPS\ 
+                            </div>\
+                        </div>\
+                    </div>\
+                `);
+			  }
+              $('.daft-spinner').addClass('d-none');
+            },
+            beforeSend:function(d){
+    		    $("#contentDiv").html("<center><strong style='color: #0088a3'><img class='daft-spinner' src='<?=base_url();?>bowernd/pin_digipol_new.png'></strong></center>");
+            }
+        });
+    }
+    
+    get_tree();
 </script>
 
 
