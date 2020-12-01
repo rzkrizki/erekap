@@ -5,6 +5,7 @@ class Rekap extends CI_Controller {
 
 	//constructor
 	public function __construct(){
+		
         parent::__construct();
         date_default_timezone_set('Asia/Jakarta');
         $this->load->model('Dashboard_model');

@@ -21,6 +21,11 @@
         min-width: 100px;
     }
 
+    .spacing_top{
+        margin-top: -70px;
+    }
+
+
     @media screen and (min-width: 768px) {
         #imageRekap{
             width: 8%;
@@ -37,6 +42,15 @@
         #notes,
         #address{
             font-size: 20px;
+        }
+    
+        #image_modal{
+            margin-left:130px;
+            width: 12%;
+        }
+
+        #title_modal{
+            margin-right:130px; 
         }
     }
 
@@ -62,6 +76,14 @@
         #notes,
         #address{
             font-size: 13px;
+        }
+
+        .spacing_top2{
+            margin-top: -70px;
+        }
+
+        #image_modal{
+            width: 22%;
         }
     }
 </style>
@@ -133,7 +155,7 @@
     </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal
 <div class="modal fade" id="modalDetailPelanggaran" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal" role="document">
     <div class="modal-content">
@@ -146,9 +168,7 @@
       <div class="modal-body">
         <div class="row" style="margin-bottom: 10px;">
             <div class="col-6">
-               
-                    <font style="font-weight: 600; color: #000" id="titleDate">Tanggal Pelanggaran :</font>
-                
+                <font style="font-weight: 600; color: #000" id="titleDate">Tanggal Pelanggaran :</font>
             </div>
             <div class="col-6">
                 <font style="font-weight: 600; color: #000" id="date"></font>
@@ -156,9 +176,7 @@
         </div>
         <div class="row" style="margin-bottom: 10px;">
             <div class="col-6">
-                <!-- <div class="col-md-12"> -->
-                    <font style="font-weight: 600; color: #000" id="titleNotes">Catatan Pelanggaran :</font>
-                <!-- </div> -->
+                <font style="font-weight: 600; color: #000" id="titleNotes">Catatan Pelanggaran :</font>
             </div>
             <div class="col-6">
                 <font style="font-weight: 600; color: #000" id="notes"></font>
@@ -166,33 +184,12 @@
         </div>
         <div class="row" style="margin-bottom: 10px;">
             <div class="col-6">
-                <!-- <div class="col-md-12"> -->
-                    <font style="font-weight: 600; color: #000" id="titleAddress">Alamat Pelanggaran :</font>
-                <!-- </div> -->
+                <font style="font-weight: 600; color: #000" id="titleAddress">Alamat Pelanggaran :</font>
             </div>
             <div class="col-6">
                 <font style="font-weight: 600; color: #000" id="address"></font>
             </div>
         </div>
-            
-            <!-- <div class="col-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <font style="font-size: 20px; font-weight: 600; color: #000" id="notes"></font>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <font style="font-size: 20px; font-weight: 600; color: #000" id="address"></font>
-                    </div>
-                </div>
-            </div> -->
-        <!-- </div> -->
         <hr>
         <div class="row" style="margin-bottom: 10px;">
             <div class="col-md-12">
@@ -202,7 +199,65 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<div class="modal fade" id="modalDetailPelanggaran" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-dialog-centered modal" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Body-->
+                <div class="modal-body" style="background-color: #1b1a28;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img style="float:left;" src="<?= base_url() ?>assets/images/png/icon-lapor.png" alt="" id="image_modal">
+                            <h3 style="font-weight: 700; color: #fff; font-size: 46px" class="" id="title_modal">Lapor</h3>
+                        </div>
+                    </div>
+                    <div class="card" style="border: 5px solid #848484; margin-top: 40px; padding: 15px; border-radius: 25px">
+                        <div class="card-body">
+                            <div class="row" style="margin-bottom: 10px;">
+                                <div class="col-6">
+                                    <font style="font-weight: 600; color: #fff" id="titleDate">Tanggal Pelanggaran</font>
+                                </div>
+                                <div class="col-6">
+                                    <font style="font-weight: 600; color: #fff" id="date"></font>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 10px;">
+                                <div class="col-6">
+                                    <font style="font-weight: 600; color: #fff" id="titleNotes">Catatan Pelanggaran</font>
+                                </div>
+                                <div class="col-6">
+                                    <font style="font-weight: 600; color: #fff" id="notes"></font>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 10px;">
+                                <div class="col-6">
+                                    <font style="font-weight: 600; color: #fff" id="titleAddress">Alamat Pelanggaran</font>
+                                </div>
+                                <div class="col-6">
+                                    <font style="font-weight: 600; color: #fff" id="address"></font>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row" style="margin-bottom: 10px;">
+                                <div class="col-md-12">
+                                    <img src="" alt="" id="foto_pelanggaran" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-block" style="background-color: #fff; color: 1b1a28; font-weight: 600" data-dismiss="modal">CLOSE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
 
 <script type="text/javascript" src="<?=base_url(DEF_THEMES.'/jquery-ui.min.js');?>"></script>
 <script type="text/javascript" src="<?=base_url(DEF_THEMES.'/fancytree/jquery.fancytree-all.min.js');?>"></script>
@@ -318,14 +373,18 @@
                     $('#contentDiv').empty();
                     var no = 1;
                     $.each(data.result, function(index, element) {
+                        notes = element.notes.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+                            return letter.toUpperCase();
+                        });
                         $('#contentDiv').append(
-                            `<div class="col-md-6" style="padding: 20px;">\
-                                <div class="card text-center" style="background-color: #1b1a28;">\
-                                    <div class="card-header" style="font-weight: 600; font-size: 20px; color: #fff">\
-                                        Pelanggaran `+no+`
+                            `<div class="col-md-6">\
+                                <div class="card text-center ` + (index > 1 ? `spacing_top` : `` )+ ` ` + (index > 0 ? `spacing_top2` : `` )+ `" style="background-color: #f7f7f9; margin-bottom: 90px;">\
+                                    <hr>\
+                                    <div class="card-header" style="font-weight: 600; font-size: 30px; color: #1b1a28;">\
+                                        `+notes+`
                                     </div>\
                                     <br>\
-                                    <img class="card-img-top" src="<?= base_url() ?>assets/images/png/speech.png" alt="Card image cap" style="width: 30%; background-color: #ae0001; padding: 18px; cursor: pointer" onclick="detail_pelanggaran(`+element.id_pelanggaran+`)">\
+                                    <img class="card-img-top" src="`+element.url_image+`" alt="Card image cap" style="width:auto; height: 200px; margin-bottom: 22px; max-width: 378px; cursor: pointer" onclick="detail_pelanggaran(`+element.id_pelanggaran+`)">\
                                 </div>\
                             </div>\
                         `);
