@@ -871,3 +871,390 @@ ERROR - 2020-12-01 14:40:00 --> Severity: Warning --> Invalid argument supplied 
 ERROR - 2020-12-01 08:40:00 --> 404 Page Not Found: Bowernd/img
 ERROR - 2020-12-01 14:40:01 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 56
 ERROR - 2020-12-01 14:40:01 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 56
+ERROR - 2020-12-01 14:42:26 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 56
+ERROR - 2020-12-01 14:42:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 56
+ERROR - 2020-12-01 14:42:26 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 66
+ERROR - 2020-12-01 08:42:27 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 14:42:27 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 56
+ERROR - 2020-12-01 14:42:27 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 56
+ERROR - 2020-12-01 14:42:27 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 66
+ERROR - 2020-12-01 14:42:27 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 56
+ERROR - 2020-12-01 14:42:27 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 56
+ERROR - 2020-12-01 14:42:27 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 66
+ERROR - 2020-12-01 15:00:03 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:03 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:03 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 09:00:07 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 15:00:17 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:17 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:17 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:00:19 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:19 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:19 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:00:57 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:57 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:00:58 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:58 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:00:58 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:02:49 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:49 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:49 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 09:02:49 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 15:02:50 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:50 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:02:52 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:52 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:52 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:02:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:55 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:02:57 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:02:57 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:03:13 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:13 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 09:03:14 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 15:03:16 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:16 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:03:20 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:20 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:03:21 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:21 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:21 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:03:23 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:23 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:23 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:03:25 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:03:25 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:13:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:13:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:13:55 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 09:13:55 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 15:13:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:13:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:13:55 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:13:56 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:13:56 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:13:56 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:19:22 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:19:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:19:22 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 15:19:30 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:19:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 15:19:30 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 18:50:18 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:18 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:18 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 12:50:19 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:50:19 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:19 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:19 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 18:50:19 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:19 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:19 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 18:50:22 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:22 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 18:50:23 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:23 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:23 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 18:50:33 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:33 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\rekap.php 78
+ERROR - 2020-12-01 18:50:33 --> Severity: Notice --> Undefined variable: id_kabupaten C:\xampp56\htdocs\erekap\application\views\rekap.php 88
+ERROR - 2020-12-01 18:50:54 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:50:54 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:50:54 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:50:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:50:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:50:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:50:56 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:50:56 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:50:56 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:50:58 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:50:58 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:51:00 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:51:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:51:17 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:51:17 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:14 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:53:15 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:53:16 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:16 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:17 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:53:17 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:53:18 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:18 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:23 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:23 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:36 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:36 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:53:37 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:53:37 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:37 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:38 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:53:38 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:53:39 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:41 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:41 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:44 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:53:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:20 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:54:21 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:54:21 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:21 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:22 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:22 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:54:22 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:54:24 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:37 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:40 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:54:40 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:37 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:56:37 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:56:38 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:38 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:39 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:56:39 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:56:47 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:47 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:56:47 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:56:48 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:48 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:56:49 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:56:49 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:57:18 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:19 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:57:19 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:57:20 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:21 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:57:21 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:57:21 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:21 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:22 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:25 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:47 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:47 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:57:47 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:57:48 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:48 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:49 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:57:49 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:57:50 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:52 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:57:52 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:06 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:58:07 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:58:08 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:08 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:08 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:58:08 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:58:10 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:13 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:38 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 12:58:38 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 18:58:39 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:39 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:40 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 18:58:40 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 18:58:41 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:41 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:43 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 18:58:43 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:02:51 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:02:51 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:02:52 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:03:16 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:03:18 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:03:45 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:45 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:48 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:49 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:03:49 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:03:52 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:52 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:57 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:03:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:04:00 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:04:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:04:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:04:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:04:56 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:05:11 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:05:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:05:14 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:06:05 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:06:05 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:06:07 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:07:26 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:07:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:07:28 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:07:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:07:29 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:07:29 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:08:18 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:08:18 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:08:20 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:08:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:16:59 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:16:59 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:17:00 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:17:11 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:11 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:16 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:17:16 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:17:16 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:22 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:34 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:34 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:17:35 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:17:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:56 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:17:56 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:17:57 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:58 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:17:58 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:06 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:06 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:32 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:18:33 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:18:51 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:51 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:51 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:51 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:52 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:18:52 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:18:57 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:18:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:01 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:01 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:18 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:18 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:38 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:43 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:19:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:19:46 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:20:04 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:04 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:06 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:06 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:07 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:20:07 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:20:20 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:20:21 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:20:38 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:38 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:40 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:20:40 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:20:42 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:44 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:49 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:49 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:54 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:20:54 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:04 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:04 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:07 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:11 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:26 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:21:27 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:21:31 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:32 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:33 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:21:33 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:21:36 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:36 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:42 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:54 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:21:54 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:07 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:26:08 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:26:22 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:22 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:23 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:26:23 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:26:31 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:36 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:36 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:42 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:26:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:00 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 13:28:00 --> 404 Page Not Found: Bowernd/img
+ERROR - 2020-12-01 19:28:21 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:21 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:21 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:21 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:21 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 68
+ERROR - 2020-12-01 19:28:22 --> Severity: Notice --> Trying to get property of non-object C:\xampp56\htdocs\erekap\application\controllers\Report.php 74
+ERROR - 2020-12-01 19:28:28 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:35 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:40 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:40 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:46 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:55 --> Severity: Notice --> Undefined variable: provinsi C:\xampp56\htdocs\erekap\application\views\report.php 118
+ERROR - 2020-12-01 19:28:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp56\htdocs\erekap\application\views\report.php 118

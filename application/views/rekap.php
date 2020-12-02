@@ -24,6 +24,28 @@
         font-weight: 600;
         min-width: 100px;
     }
+
+    @media screen and (min-width: 768px) {
+        #imageRekap{
+            width: 8%;
+        }
+
+        #TitleRekap{
+            font-size: 60px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #imageRekap{
+            width: 19%;
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        #TitleRekap{
+            font-size: 44px;
+        }
+    }
 </style>
 
 <div class="content-w" style="background-color: #1b1a28;">
@@ -69,8 +91,8 @@
                 <div class="element-wrapper" style="padding-bottom: 30px;">
                     <div class="mx-auto" id="logoRow">
                         <span class='daft-title-wil'> 
-                            <img class="" src="<?= base_url() ?>assets/images/png/icon-rekap.png" alt="" id="imageRekap" style="width: 8%;">
-                            <font style="font-size: 60px; color: #fff; font-weight: 600; margin-left: 30px">Rekap</font>
+                            <img class="" src="<?= base_url() ?>assets/images/png/icon-rekap.png" alt="" id="imageRekap">
+                            <font style="font-size: 60px; color: #fff; font-weight: 600; margin-left: 30px" id="TitleRekap">Rekap</font>
                         </span>
                     </div>
                 </div>
@@ -80,54 +102,6 @@
                     </div>
                 </div>
                 <div class="row" id="contentDiv">
-                    <!--div class="col-md-3" style="padding: 20px;">
-                        <div class="card text-center" style="background-color: #1b1a28;">
-                            <div class="card-header" style="font-weight: 600; font-size: 20px; color: #fff">
-                                1
-                            </div>
-                            <br>
-                            <img class="card-img-top" src="<?= base_url() ?>assets/images/paslon/paslon_1.png" alt="Card image cap" style="width: 80%;">
-                            <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">
-                                88.776
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 20px;">
-                        <div class="card text-center" style="background-color: #1b1a28;">
-                            <div class="card-header" style="font-weight: 600; font-size: 20px; color: #fff">
-                            2
-                            </div>
-                            <br>
-                            <img class="card-img-top" src="<?= base_url() ?>assets/images/paslon/paslon_2.png" alt="Card image cap" style="width: 80%;">
-                            <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">
-                                46.317
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 20px;">
-                        <div class="card text-center" style="background-color: #1b1a28;">
-                            <div class="card-header" style="font-weight: 600; font-size: 20px; color: #fff">
-                            3
-                            </div>
-                            <br>
-                            <img class="card-img-top" src="<?= base_url() ?>assets/images/paslon/paslon_3.png" alt="Card image cap" style="width: 80%;">
-                            <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">
-                                111.934
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 20px;">
-                        <div class="card text-center" style="background-color: #1b1a28;">
-                            <div class="card-header" style="font-weight: 600; font-size: 20px; color: #fff">
-                            4
-                            </div>
-                            <br>
-                            <img class="card-img-top" src="<?= base_url() ?>assets/images/paslon/paslon_4.png" alt="Card image cap" style="width: 80%;">
-                            <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">
-                                138.953
-                            </div>
-                        </div>
-                    </div-->
                 </div>
                 <div class="row" id="summaryDiv"></div>
             </div>
@@ -144,29 +118,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 <script>
-/*
-var ctxP = document.getElementById("pieChart").getContext('2d');
-    var myPieChart = new Chart(ctxP, {
-      type: 'pie',
-      data: {
-        labels: ["Paslon 1", "Paslon 2", "Paslon 3", "Paslon 4"],
-        datasets: [{
-          data: [88.776, 46.317, 111.934, 138.953],
-          backgroundColor: ["#52e8e8", "#00ffaa", "#00b2b2", "#a4ffff"],
-          hoverBackgroundColor: ["#52e8e8", "#00ffaa", "#00b2b2", "#a4ffff"]
-        }]
-      },
-      options: {
-        legend: {
-            display: false
-         },
-         tooltips: {
-            enabled: true
-         },
-        responsive: true
-      }
-    });
-*/ 
+ 
     function get_tree(){
         let tree = $("#tree2");
         tree.fancytree({
@@ -195,12 +147,11 @@ var ctxP = document.getElementById("pieChart").getContext('2d');
             }
         });
 
-       
-            tree.fancytree("getRootNode").visit(function(node){
-                if(node.getLevel() == 1) {
-                    node.setExpanded(true);
-                }
-            });
+        tree.fancytree("getRootNode").visit(function(node){
+            if(node.getLevel() == 1) {
+                node.setExpanded(true);
+            }
+        });
     }
     
     
@@ -263,7 +214,6 @@ var ctxP = document.getElementById("pieChart").getContext('2d');
                                 </div>\
                             </div>\
                         `);
-                        //   console.log(element);
                         no += 1;
                     });
                     console.log(data);
@@ -293,7 +243,7 @@ var ctxP = document.getElementById("pieChart").getContext('2d');
                 // pie chart
                 // summary
                 $('#summaryDiv').append(
-                    `<div class="offset-1 col-md-3" style="padding: 20px;">\
+                    `<div class="col-md-3" style="padding: 20px;">\
                         <div class="card text-center" style="background-color: #1b1a28;">\
                             <div class="card-footer mt-3" style="background-color: #01ecf7; width: 80%;margin: auto; color: #000; font-weight: 600; font-size: 20px">\
                                 `+data.summary.total_dpt+` </br> DPT\

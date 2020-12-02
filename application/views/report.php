@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto" style="padding-bottom: 30px;">
-                    <ul class="nav nav-pills" id="tabNav">
+                    <ul class="nav nav-pills d-none" id="tabNav">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="pill" href="#flamingo" id="today_link" role="tab" aria-controls="pills-flamingo" aria-selected="true" onclick="flag('today', 2)">Today</a>
                         </li>
@@ -149,57 +149,12 @@
                 <div class="row" id="contentDiv">
                    
                 </div>
+                <div class="row" id="totalReport">
             </div>
         </div>
         </div>
     </div>
 </div>
-
-<!-- Modal
-<div class="modal fade" id="modalDetailPelanggaran" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Detail Pelanggaran</h5>
-        <button type="button" class="close" onclick="close_detail()" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row" style="margin-bottom: 10px;">
-            <div class="col-6">
-                <font style="font-weight: 600; color: #000" id="titleDate">Tanggal Pelanggaran :</font>
-            </div>
-            <div class="col-6">
-                <font style="font-weight: 600; color: #000" id="date"></font>
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 10px;">
-            <div class="col-6">
-                <font style="font-weight: 600; color: #000" id="titleNotes">Catatan Pelanggaran :</font>
-            </div>
-            <div class="col-6">
-                <font style="font-weight: 600; color: #000" id="notes"></font>
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 10px;">
-            <div class="col-6">
-                <font style="font-weight: 600; color: #000" id="titleAddress">Alamat Pelanggaran :</font>
-            </div>
-            <div class="col-6">
-                <font style="font-weight: 600; color: #000" id="address"></font>
-            </div>
-        </div>
-        <hr>
-        <div class="row" style="margin-bottom: 10px;">
-            <div class="col-md-12">
-                <img src="" alt="" id="foto_pelanggaran" style="width: 100%;">
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 <div class="modal fade" id="modalDetailPelanggaran" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -273,6 +228,7 @@
     });
    
     function get_tree(){
+        $('#totalReport').empty();
         let tree = $("#tree2");
         tree.fancytree({
             selectMode: 1,
@@ -310,7 +266,6 @@
     }
 
     function load_information(id,tipe,nama,logo){
-       
         if(tipe == "kecamatan"){
             $('#id_kecamatan').val(id)
             $('#id_kelurahan').val('0')
@@ -345,6 +300,7 @@
     }
 
     function filter_data(){
+        $('#tabNav').addClass('d-none');
         $.ajax({
             type: 'POST',
             url: '<?= base_url('report/filter_data'); ?>',
@@ -355,6 +311,7 @@
 			},
    			dataType: 'json',
             success: function(data) {
+              
               if(data.status == 'error'){
 				Swal.fire({
 					icon: 'error',
@@ -362,7 +319,6 @@
 					text: data.message,
 				})
 			  }else{
-                
 				if(data.result == ''){
                     Swal.fire({
                         icon: 'error',
@@ -371,6 +327,7 @@
                     })
                 }else{
                     $('#contentDiv').empty();
+                    $('#tabNav').removeClass('d-none');
                     var no = 1;
                     $.each(data.result, function(index, element) {
                         notes = element.notes.toLowerCase().replace(/\b[a-z]/g, function(letter) {
@@ -390,13 +347,20 @@
                         `);
                         //   console.log(element);
                         no += 1;
+                        
                     });
+                    $('#totalReport').append(
+                        `<div class="col-md-12 text-center">\
+                            <span style="padding: 13px; background-color: #01ecf7; color: #000; font-weight: 600;">N = `+data.result.length+`</span>
+                        </div>\
+                    `);
                     console.log(data);
                 }
 			  }
               $('.daft-spinner').addClass('d-none') 
             },
             beforeSend:function(d){
+                $('#totalReport').empty();
     		    $("#contentDiv").html("<center><strong style='color: #0088a3'><img class='daft-spinner' src='<?=base_url();?>bowernd/pin_digipol_new.png'></strong></center>");
             }
         });

@@ -35,12 +35,12 @@
             }
 
             #titleRekap{
-                margin-right: 60px;
+                margin-right: 54px;
                 font-size: 30px;
             }
 
             #titleLapor{
-                margin-left: 75px;
+                margin-left: 65px;
                 font-size: 30px;
             }
 		}
